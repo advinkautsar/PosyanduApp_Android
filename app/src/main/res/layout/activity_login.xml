@@ -13,79 +13,92 @@
         android:padding="@dimen/_15sdp"
         android:orientation="vertical">
 
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login Form"
+            android:textSize="@dimen/_15ssp"
+            android:fontFamily="@font/interbold"
+            android:textColor="@color/black"
+            android:gravity="center"/>
+
         <ImageView
             android:id="@+id/logoImage"
             android:layout_width="@dimen/_259sdp"
             android:layout_height="@dimen/_196sdp"
             android:layout_gravity="center"
-            android:layout_marginTop="@dimen/_20sdp"
             android:src="@drawable/ic_svglogin" />
 
         <TextView
-            android:id="@+id/logo_name1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Selamat Datang"
+            android:fontFamily="@font/interbold"
             android:textAlignment="center"
             android:textColor="#000"
             android:textSize="@dimen/_18ssp"
             android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/logo_name2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/intermedium"
             android:text="Silahkan masuk menggunakan nama pengguna dan kata sandi yang telah terdaftar"
             android:textAlignment="center"
             android:textColor="#838391"
-            android:textSize="@dimen/_13ssp" />
+            android:textSize="@dimen/_12ssp"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_nama"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_nama_pengguna"
-            app:startIconTint="@color/black">
+            app:startIconTint="#003399"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:background="@color/white"
                 android:hint="Nama Pengguna"
                 android:inputType="text"
-                android:textSize="@dimen/_13ssp"
+                android:fontFamily="@font/intermedium"/>
 
-                />
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/login_sandi"
             app:passwordToggleEnabled="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_kata_sandi"
-            app:startIconTint="@color/black">
+            app:startIconTint="#003399"
+            app:boxStrokeWidthFocused="2dp">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_15sdp"
                 android:hint="Kata Sandi"
-                android:textSize="@dimen/_13ssp"
-                android:paddingStart="0dp"
                 android:inputType="textPassword"
-                android:background="@color/white"/>
+                android:fontFamily="@font/intermedium"/>
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_login"
             android:layout_width="match_parent"
             android:layout_height="@dimen/_45sdp"
-            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/interbold"
+            android:textSize="@dimen/_12ssp"
             android:text="Masuk"
-            android:textAllCaps="false"
-            android:textSize="@dimen/_13ssp" />
+            android:textAllCaps="false"/>
 
         <LinearLayout
             android:layout_gravity="center_horizontal"
@@ -99,14 +112,17 @@
                 android:layout_height="wrap_content"
                 android:layout_marginEnd="@dimen/_5sdp"
                 android:text="Belum mempunyai akun ?"
-                android:textSize="@dimen/_13ssp"/>
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/intermedium"/>
 
             <TextView
+                android:id="@+id/tv_daftar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Daftar"
                 android:textStyle="bold"
-                android:textSize="@dimen/_13ssp"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/interbold"
                 android:textColor="#003399"/>
         </LinearLayout>
 
