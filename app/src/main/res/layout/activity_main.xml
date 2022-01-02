@@ -10,9 +10,18 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="@dimen/_293sdp"
-        android:layout_height="@dimen/_293sdp"
+        android:layout_width="@dimen/_120sdp"
+        android:layout_height="@dimen/_120sdp"
         android:layout_gravity="center"
-        android:src="@drawable/logo"/>
+        android:src="@drawable/logoposyandu"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/interbold"
+        android:gravity="center"
+        android:textColor="#003399"
+        android:text="Posyandu"
+        android:textSize="@dimen/_20ssp"/>
 
 </LinearLayout>
