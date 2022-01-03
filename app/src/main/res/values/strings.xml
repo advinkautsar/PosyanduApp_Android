@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">PosyanduApp</string>
+    <string name="app_name">Posyandu</string>
+    <string-array name="daftar_namaanak">
+        <item>Advin Kautsar</item>
+        <item>Ahmad Syauqi</item>
+        <item>Afton Ilman</item>
+        <item>Ahmad Baihaqi</item>
+    </string-array>
+    <string-array name="nama_posyandu">
+        <item>Posyandu Anggrek 1</item>
+        <item>Posyandu Dahlia</item>
+        <item>Posyandu Mawar</item>
+        <item>Posyandu Delima</item>
+    </string-array>
+    <string-array name="nama_bidan">
+        <item>Bidan Ida</item>
+        <item>Bidan Tuti</item>
+    </string-array>
 </resources>

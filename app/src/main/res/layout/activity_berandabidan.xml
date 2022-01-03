@@ -145,6 +145,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
+                        android:id="@+id/img_anak"
                         android:src="@drawable/boy"
                         android:layout_width="@dimen/_80sdp"
                         android:layout_height="@dimen/_80sdp"/>
@@ -159,6 +160,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -177,7 +179,8 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:src="@drawable/medicalrecord"
+                        android:id="@+id/img_datarekap"
+                        android:src="@drawable/pemeriksaankesehatan"
                         android:layout_width="@dimen/_80sdp"
                         android:layout_height="@dimen/_80sdp"/>
                     <TextView
@@ -211,7 +214,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/Img_rujukan"
+                        android:id="@+id/img_rujukan"
                         android:src="@drawable/hospital"
                         android:layout_width="@dimen/_80sdp"
                         android:layout_height="@dimen/_80sdp"/>
@@ -244,6 +247,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
+                        android:id="@+id/img_kesehatananak"
                         android:src="@drawable/examination"
                         android:layout_width="@dimen/_80sdp"
                         android:layout_height="@dimen/_80sdp"/>

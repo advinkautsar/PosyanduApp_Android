@@ -14,9 +14,17 @@ class BerandabidanActivity : AppCompatActivity() {
         setContentView(R.layout.activity_berandabidan)
 
         val btn_logout = findViewById(R.id.img_keluar) as ImageView
+        val btn_kesehatananak = findViewById(R.id.img_kesehatananak) as ImageView
+        val btn_rujukananak = findViewById(R.id.img_rujukan) as ImageView
 
         btn_logout.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
+        }
+        btn_kesehatananak.setOnClickListener {
+            startActivity(Intent(this, KesehatananakActivity::class.java))
+        }
+        btn_rujukananak.setOnClickListener {
+            startActivity(Intent(this, RujukanActivity::class.java))
         }
     }
 }

@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PosyanduApp">
         <activity
+            android:name=".ui.bidan.RujukanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bidan.KesehatananakActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.bidan.BerandabidanActivity"
             android:exported="false" />
         <activity
