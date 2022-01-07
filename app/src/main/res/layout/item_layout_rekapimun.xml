@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_4sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/tvrekapimun_bulan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Februari 2022"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/monserratbold"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="HB-0 ( 0-7 Hari )"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="1 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="BCG ( 0-1 Bulan )"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="2 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Polio Tetes 1 ( 0-1 Bulan )"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="5 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="DPT-HB-Hib 1 ( Usia 2 Bulan )"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="9 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Polio Tetes 2 ( Usia 2 Bulan ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="2 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="DPT-HB-Hib 2  ( Usia 3 Bulan ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="2 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Polio Tetes 3 ( Usia 3 Bulan ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="2 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="DPT-HB-Hib 3 ( Usia 4 Bulan ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="2 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Polio Tetes 4 ( Usia 4 Bulan ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="2 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="IPV ( Usia 4 Bulan ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="2 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Campak ( Usia 9 Bulan ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin11"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="2 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="DPT-HB-Hib Lanjutan ( Usia 18 Bulan ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="2 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_vaksin13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Campak Lanjutan ( Usia 18 Bulan ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/rekapimun_vaksin13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="1 Anak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

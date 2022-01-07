@@ -16,7 +16,13 @@ class BerandabidanActivity : AppCompatActivity() {
         val btn_logout = findViewById(R.id.img_keluar) as ImageView
         val btn_kesehatananak = findViewById(R.id.img_kesehatananak) as ImageView
         val btn_rujukananak = findViewById(R.id.img_rujukan) as ImageView
+        val btn_rekapimunisasi = findViewById(R.id.img_datarekap) as ImageView
+        val btn_anak = findViewById(R.id.img_anak) as ImageView
 
+
+        btn_rekapimunisasi.setOnClickListener {
+            startActivity(Intent(this, RekapimunisasiActivity::class.java))
+        }
         btn_logout.setOnClickListener {
             startActivity(Intent(this, LoginActivity::class.java))
         }
@@ -26,5 +32,9 @@ class BerandabidanActivity : AppCompatActivity() {
         btn_rujukananak.setOnClickListener {
             startActivity(Intent(this, RiwayatrujukanActivity::class.java))
         }
+        btn_anak.setOnClickListener {
+            startActivity(Intent(this, AnakActivity::class.java))
+        }
+
     }
 }
