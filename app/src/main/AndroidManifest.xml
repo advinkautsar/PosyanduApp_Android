@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PosyanduApp">
         <activity
+            android:name=".ui.bidan.RiwayatrujukanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bidan.PemeriksaankesehatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bidan.KelolajadwalimunisasiActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.bidan.RujukanActivity"
             android:exported="false" />
         <activity

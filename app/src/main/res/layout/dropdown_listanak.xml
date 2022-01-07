@@ -6,6 +6,6 @@
     android:textColor="@color/black"
     android:textStyle="bold"
     android:text="Nama Anak"
-    android:textSize="@dimen/_13ssp"
+    android:textSize="@dimen/_10ssp"
     android:fontFamily="@font/monserratregular">
 </TextView>

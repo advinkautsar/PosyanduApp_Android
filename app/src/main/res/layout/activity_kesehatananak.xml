@@ -41,7 +41,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:orientation="vertical"
-        android:layout_marginTop="@dimen/_40sdp">
+        android:layout_marginTop="@dimen/_68sdp">
 
         <androidx.cardview.widget.CardView
             android:layout_width="@dimen/_135sdp"
@@ -98,9 +98,10 @@
 
                 <ImageView
                     android:id="@+id/kelola_jadwalimunisasi"
-                    android:src="@drawable/jadwal"
                     android:layout_width="@dimen/_80sdp"
-                    android:layout_height="@dimen/_80sdp"/>
+                    android:layout_height="@dimen/_80sdp"
+                    android:src="@drawable/jadwal" />
+
                 <TextView
                     android:fontFamily="@font/monserratbold"
                     android:layout_marginTop="@dimen/_8sdp"

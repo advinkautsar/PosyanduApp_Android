@@ -29,9 +29,25 @@ class RujukanActivity : AppCompatActivity() {
         //intent back
         val btn_backtoberandabidan = findViewById(R.id.back_toberandabidan) as ImageView
         btn_backtoberandabidan.setOnClickListener {
-            startActivity(Intent(this, BerandabidanActivity::class.java))
+            startActivity(Intent(this, RiwayatrujukanActivity::class.java))
         }
 
+        dropdown()
+
+        //datepicker show
+        binding.rujukanTanggalrujuk.setOnClickListener {
+            val datePickerDialog = DatePickerDialog(
+                this, { view, year, month, day ->
+                    var month = month
+                    month = month + 1
+                    val urutan = "$day/$month/$year"
+                    binding.rujukanTanggalrujuk.setText(urutan)
+                }, year, month, day
+            )
+            datePickerDialog.show()
+        }
+    }
+    fun dropdown(){
         //dropdown nama anak
         val nama_anak = resources.getStringArray(R.array.daftar_namaanak)
         val adapter = ArrayAdapter(
@@ -54,6 +70,17 @@ class RujukanActivity : AppCompatActivity() {
             setAdapter(adapterbidan)
         }
 
+        //dropdown puskesmas
+        val nama_puskesmas = resources.getStringArray(R.array.nama_puskesmas)
+        val adapterpus = ArrayAdapter(
+            this,
+            R.layout.dropdown_listanak,
+            nama_puskesmas
+        )
+        with(binding.rujukanNamapuskesmas){
+            setAdapter(adapterpus)
+        }
+
         //dropdown nama posyandu
         val nama_posyandu = resources.getStringArray(R.array.nama_posyandu)
         val adapterposyandu = ArrayAdapter(
@@ -63,19 +90,6 @@ class RujukanActivity : AppCompatActivity() {
         )
         with(binding.rujukanNamaposyandu){
             setAdapter(adapterposyandu)
-        }
-
-        //datepicker show
-        binding.rujukanTanggalrujuk.setOnClickListener {
-            val datePickerDialog = DatePickerDialog(
-                this, { view, year, month, day ->
-                    var month = month
-                    month = month + 1
-                    val urutan = "$day/$month/$year"
-                    binding.rujukanTanggalrujuk.setText(urutan)
-                }, year, month, day
-            )
-            datePickerDialog.show()
         }
     }
 }

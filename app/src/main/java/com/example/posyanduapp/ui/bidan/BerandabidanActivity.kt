@@ -24,7 +24,7 @@ class BerandabidanActivity : AppCompatActivity() {
             startActivity(Intent(this, KesehatananakActivity::class.java))
         }
         btn_rujukananak.setOnClickListener {
-            startActivity(Intent(this, RujukanActivity::class.java))
+            startActivity(Intent(this, RiwayatrujukanActivity::class.java))
         }
     }
 }

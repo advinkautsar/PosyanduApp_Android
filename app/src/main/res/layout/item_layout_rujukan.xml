@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_cardview"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/tvrujukan_namaposyandu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Posyandu Anggrek 1"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/monserratbold"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/tvrujukan_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="21-02-2022"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/monserratmedium"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_nama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Nama Anak"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_marginStart="@dimen/_69sdp"
+                android:layout_toRightOf="@id/text_nama"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+            <TextView
+                android:id="@+id/tvrujukan_namaanak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Advin Kautsar"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_bidan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Nama Pemeriksa"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_marginStart="@dimen/_45sdp"
+                android:layout_toRightOf="@id/text_bidan"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+            <TextView
+                android:id="@+id/tvrujukan_namabidan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Bidan Ifa"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_tindakan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Rujukan ke"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=":"
+                android:layout_marginStart="@dimen/_71sdp"
+                android:layout_toRightOf="@id/text_tindakan"
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+            <TextView
+                android:id="@+id/tvrujukan_puskesmas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Puskesmas Paspan"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_penyakit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Penyakit/Keluhan"
+                android:textSize="@dimen/_10ssp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_toRightOf="@id/text_penyakit"
+                android:fontFamily="@font/monserratregular"
+                android:text=":"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tvrujukan_namapenyakit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_penyakit"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Terjadi permasalahan dengan ciri ciri mengarah pada gizi buruk yang harus segera mendapat penanganan di puskesmas"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

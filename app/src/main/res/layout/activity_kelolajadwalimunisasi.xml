@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.bidan.RujukanActivity">
+    tools:context=".ui.bidan.KelolajadwalimunisasiActivity">
 
     <LinearLayout
         android:padding="@dimen/_15sdp"
@@ -16,7 +16,7 @@
 
         <ImageView
             android:layout_gravity="center"
-            android:id="@+id/back_toberandabidan"
+            android:id="@+id/btn_kembalikelolajadwal"
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
             android:padding="5dp"
@@ -28,7 +28,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginStart="@dimen/_8sdp"
-            android:text="Pencatatan Rujukan Anak"
+            android:text="Kelola Jadwal Imunisasi"
             android:textSize="@dimen/_13ssp"
             android:fontFamily="@font/monserratbold"
             android:textColor="@color/white"/>
@@ -54,7 +54,7 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
                 <AutoCompleteTextView
-                    android:id="@+id/rujukan_namaanak"
+                    android:id="@+id/kelolaimunisasi_namaanak"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/intermedium"
@@ -71,70 +71,15 @@
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
                 <AutoCompleteTextView
-                    android:id="@+id/rujukan_namaposyandu"
+                    android:id="@+id/kelolaimunisasi_namavaksin"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/intermedium"
-                    android:hint="Nama Posyandu"
+                    android:hint="Jenis imunisasi selanjutnya"
                     android:inputType="none"
                     android:textSize="@dimen/_10ssp"/>
 
             </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_15sdp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
-                <AutoCompleteTextView
-                    android:id="@+id/rujukan_namabidan"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/intermedium"
-                    android:hint="Nama Bidan ( Pemeriksa )"
-                    android:inputType="none"
-                    android:textSize="@dimen/_10ssp"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_15sdp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
-
-                <AutoCompleteTextView
-                    android:id="@+id/rujukan_namapuskesmas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:fontFamily="@font/intermedium"
-                    android:hint="Rujukan ke ( Nama Puskesmas )"
-                    android:inputType="none"
-                    android:textSize="@dimen/_10ssp"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/rujukan_keluhan"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_100sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-                >
-
-                <com.google.android.material.textfield.TextInputEditText
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_90sdp"
-                    android:fontFamily="@font/intermedium"
-                    android:gravity="top"
-                    android:hint="Penyakit / Keluhan Anak"
-                    android:inputType="textMultiLine"
-                    android:textSize="@dimen/_10ssp"/>
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-
 
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
@@ -144,13 +89,13 @@
                 >
 
                 <EditText
-                    android:id="@+id/rujukan_tanggalrujuk"
+                    android:id="@+id/kelolaimunisasi_tanggal"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:hint="Tanggal imunisasi selanjutnya "
                     android:drawableRight="@drawable/ic_baseline_date_range_24"
-                    android:fontFamily="@font/intermedium"
-                    android:hint="Tanggal Rujukan "
                     android:inputType="none"
+                    android:fontFamily="@font/intermedium"
                     android:textSize="@dimen/_10ssp"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -165,9 +110,7 @@
                 android:textAllCaps="false"
                 android:textSize="@dimen/_12ssp"/>
 
+
         </LinearLayout>
     </ScrollView>
-
-
-
 </LinearLayout>
