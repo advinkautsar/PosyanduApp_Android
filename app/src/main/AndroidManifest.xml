@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PosyanduApp">
         <activity
+            android:name=".ui.kader.RiwayatJadwalPosyanduActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.JadwalPosyanduActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.KartuAnakActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.BerandakaderActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.bidan.AnakActivity"
             android:exported="false" />
         <activity

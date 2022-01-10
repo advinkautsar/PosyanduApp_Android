@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_4sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:id="@+id/tvjadwalposyandu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="Jadwal Posyandu"
+            android:textSize="@dimen/_13ssp"
+            android:fontFamily="@font/monserratbold"/>
+
+        <TextView
+            android:id="@+id/tvjadwal_tanggal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:text="21-02-2022"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/monserratregular"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/text_namaposyandu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/monserratbold"
+                    android:text="Tempat Kegiatan :"
+                    android:textSize="@dimen/_9ssp" />
+
+                <TextView
+                    android:id="@+id/tvjadwal_namaposyandu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_namaposyandu"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/monserratregular"
+                    android:text="Posyandu Anggrek 1"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/text_waktukegiatan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/monserratbold"
+                    android:text="Waktu Mulai :"
+                    android:textSize="@dimen/_9ssp" />
+
+                <TextView
+                    android:id="@+id/tvjadwal_waktukegiatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/text_waktukegiatan"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_10sdp"
+                    android:fontFamily="@font/monserratregular"
+                    android:text="09.00 WIB"
+                    android:textSize="@dimen/_12ssp" />
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/monserratbold"
+                android:text="Alamat Tempat Kegiatan :"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/tvjadwal_alamatkegiatan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_alamat"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Jl. Blimbing Blok d5/32 Lingk. kalipuro asri banyuwangi"
+                android:textSize="@dimen/_12ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_keterangan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:fontFamily="@font/monserratbold"
+                android:text="Alamat Tempat Kegiatan :"
+                android:textSize="@dimen/_9ssp" />
+
+            <TextView
+                android:id="@+id/tvjadwal_keterangan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/text_keterangan"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Imunisasi Dasar dan Penyuluhan Covid-19"
+                android:textSize="@dimen/_12ssp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
