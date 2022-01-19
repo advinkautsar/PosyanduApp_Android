@@ -100,6 +100,26 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_12ssp"/>
 
+        <Button
+            android:id="@+id/btn_kader"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/interbold"
+            android:text="Beranda Kader"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12ssp"/>
+
+        <Button
+            android:id="@+id/btn_ortu"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:fontFamily="@font/interbold"
+            android:text="Beranda Ortu"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_12ssp"/>
+
         <LinearLayout
             android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"

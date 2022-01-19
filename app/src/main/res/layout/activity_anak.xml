@@ -48,5 +48,5 @@
         android:layout_marginEnd="@dimen/_15sdp"
         android:layout_marginBottom="@dimen/_15sdp"
         tools:itemCount="17"
-        tools:listitem="@layout/item_layout_anak"/>
+        tools:listitem="@layout/item_layout_anak" />
 </RelativeLayout>

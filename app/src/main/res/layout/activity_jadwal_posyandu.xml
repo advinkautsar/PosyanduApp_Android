@@ -50,6 +50,7 @@
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:hint="Nama Posyandu"
                 android:layout_marginTop="@dimen/_15sdp"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
 
@@ -58,8 +59,8 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/intermedium"
-                    android:hint="Nama Posyandu"
                     android:inputType="none"
+                    android:text="Pilih nama posyandu"
                     android:textSize="@dimen/_10ssp"/>
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -109,7 +110,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_70sdp"
+                    android:layout_height="@dimen/_60sdp"
                     android:fontFamily="@font/intermedium"
                     android:gravity="top"
                     android:hint="Alamat Kegiatan Posyandu"
@@ -127,7 +128,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_90sdp"
+                    android:layout_height="@dimen/_80sdp"
                     android:fontFamily="@font/intermedium"
                     android:gravity="top"
                     android:hint="Keterangan Kegiatan"

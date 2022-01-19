@@ -11,6 +11,8 @@ class AnakActivity : AppCompatActivity() {
 
     private var anaklist = mutableListOf<String>()
     private var ibulist = mutableListOf<String>()
+    private var poslist = mutableListOf<String>()
+
 
     private lateinit var binding: ActivityAnakBinding
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -25,16 +27,19 @@ class AnakActivity : AppCompatActivity() {
         }
 
         binding.rvAnak.layoutManager = LinearLayoutManager(this)
-        binding.rvAnak.adapter = RecyclerAdapterAnak(anaklist, ibulist)
+        binding.rvAnak.adapter = RecyclerAdapterAnak(anaklist, ibulist, poslist)
     }
 
-    private fun addTolist(anak: String, ibu: String){
+    private fun addTolist(anak: String, ibu: String, pos: String){
         anaklist.add(anak)
         ibulist.add(ibu)
+        poslist.add(pos)
+
+
     }
     private fun postTolist(){
         for ( i in 1..20){
-            addTolist("Abrar Ibrahim","Ibu Leni ikawangi")
+            addTolist("Abrar Ibrahim","Ibu Leni ikawangi", "Posyandu Melati")
         }
     }
 }

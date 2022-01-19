@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
+import android.widget.ImageView
 import com.example.posyanduapp.ui.LoginActivity
 
 class MainActivity : AppCompatActivity() {
@@ -12,11 +13,15 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        var logo = findViewById<ImageView>(R.id.iv_posyandu)
 
-        Handler(Looper.getMainLooper()).postDelayed({
-            val intent = Intent(this@MainActivity, LoginActivity::class.java)
-            startActivity(intent)
+        logo.alpha = 0f
+        logo.animate().setDuration(1800).alpha(1f).withEndAction {
+            val i = Intent(this, LoginActivity::class.java)
+            startActivity(i)
+            overridePendingTransition(android.R.anim.fade_in,android.R.anim.fade_out)
             finish()
-        }, 1500)
+        }
+
     }
 }

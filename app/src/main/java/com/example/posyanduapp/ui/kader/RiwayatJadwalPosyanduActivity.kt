@@ -4,9 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.posyanduapp.R
 import com.example.posyanduapp.databinding.ActivityRiwayatJadwalPosyanduBinding
-import com.example.posyanduapp.ui.bidan.RecyclerAdapterJadwalPos
 
 class RiwayatJadwalPosyanduActivity : AppCompatActivity() {
 
@@ -22,9 +20,18 @@ class RiwayatJadwalPosyanduActivity : AppCompatActivity() {
         binding = ActivityRiwayatJadwalPosyanduBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        //intent
         binding.btnToberandakaderjadwalposyandu.setOnClickListener {
             startActivity(Intent(this, BerandakaderActivity::class.java))
         }
+        binding.fabRiwayatjadwalposyandu.setOnClickListener {
+            startActivity(Intent(this, JadwalPosyanduActivity::class.java))
+        }
+
+        //fungsi isi rv
+        postTolist()
+
+        //recycleview
         binding.rvRiwayatjadwalposyandu.layoutManager = LinearLayoutManager(this)
         binding.rvRiwayatjadwalposyandu.adapter = RecyclerAdapterJadwalPos(tanggalposlist, namaposlist, waktuposlist, alamatposlist, ketposlist  )
     }

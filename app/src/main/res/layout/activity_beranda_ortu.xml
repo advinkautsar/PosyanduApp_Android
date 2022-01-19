@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.kader.BerandakaderActivity">
+    tools:context=".ui.orangtua.BerandaOrtuActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -23,7 +23,7 @@
             android:layout_marginRight="35dp">
 
             <ImageView
-                android:id="@+id/imgkader_keluar"
+                android:id="@+id/imgortu_keluar"
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_alignParentRight="true"
@@ -32,7 +32,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/imgkader_keluar"
+                android:layout_below="@+id/imgortu_keluar"
                 android:layout_alignParentRight="true"
                 android:layout_marginTop="0dp"
                 android:layout_marginRight="-1dp"
@@ -55,7 +55,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_55sdp"
                 android:fontFamily="@font/monserratregular"
-                android:text="Kader"
+                android:text="Orangtua"
                 android:textColor="#FFFFFF"
                 android:textSize="@dimen/_13ssp" />
 
@@ -85,13 +85,13 @@
                     android:textSize="@dimen/_13ssp" />
 
                 <TextView
-                    android:id="@+id/namakader_posyandu"
+                    android:id="@+id/namaortu_posyandu"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_5sdp"
                     android:layout_marginTop="@dimen/_30sdp"
                     android:fontFamily="@font/monserratregular"
-                    android:text="Ibu Meita"
+                    android:text="Ibu Indah"
                     android:textColor="#FFFFFF"
                     android:textSize="@dimen/_13ssp" />
 
@@ -107,7 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:fontFamily="@font/monserratbold"
-        android:text="Beranda Kader"
+        android:text="Beranda Orangtua"
         android:textSize="@dimen/_14ssp"
         android:layout_marginTop="@dimen/_35sdp"
         android:gravity="center"
@@ -180,8 +180,8 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/img_kartuanak"
-                        android:src="@drawable/kartu"
+                        android:id="@+id/img_notifikasi"
+                        android:src="@drawable/notif"
                         android:layout_width="@dimen/_80sdp"
                         android:layout_height="@dimen/_80sdp"/>
                     <TextView
@@ -191,7 +191,7 @@
                         android:textSize="@dimen/_13ssp"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Daftar Kartu\n Anak"
+                        android:text="Notifikasi"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
@@ -215,41 +215,7 @@
                     android:layout_height="match_parent">
 
                     <ImageView
-                        android:id="@+id/img_jadwalposyandu"
-                        android:src="@drawable/calendar"
-                        android:layout_width="@dimen/_80sdp"
-                        android:layout_height="@dimen/_80sdp"/>
-                    <TextView
-                        android:fontFamily="@font/monserratbold"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_13ssp"
-                        android:gravity="center"
-                        android:text="Jadwal \nPosyandu "
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_columnWeight="1"
-                android:layout_rowWeight="1"
-                app:cardElevation="6dp"
-                app:cardCornerRadius="12dp"
-                android:layout_margin="@dimen/_12sdp"
-                >
-
-                <LinearLayout
-                    android:orientation="vertical"
-                    android:padding="16dp"
-                    android:gravity="center"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                    <ImageView
-                        android:id="@+id/img_orangtua"
+                        android:id="@+id/img_profilortu"
                         android:src="@drawable/parents"
                         android:layout_width="@dimen/_80sdp"
                         android:layout_height="@dimen/_80sdp"/>
@@ -259,7 +225,41 @@
                         android:textColor="@color/black"
                         android:textSize="@dimen/_13ssp"
                         android:gravity="center"
-                        android:text="Orangtua"
+                        android:text="Profil \nOrangtua "
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                app:cardElevation="6dp"
+                app:cardCornerRadius="12dp"
+                android:layout_margin="@dimen/_12sdp"
+                >
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_tipkes"
+                        android:src="@drawable/idea"
+                        android:layout_width="@dimen/_80sdp"
+                        android:layout_height="@dimen/_80sdp"/>
+                    <TextView
+                        android:fontFamily="@font/monserratbold"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_13ssp"
+                        android:gravity="center"
+                        android:text="Tips \nKesehatan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.example.posyanduapp.ui.bidan
+package com.example.posyanduapp.ui.kader
 
 import android.view.LayoutInflater
 import android.view.View

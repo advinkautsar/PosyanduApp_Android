@@ -6,22 +6,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    android:background="@drawable/ic_bg_splashscreen"
+    android:background="#003399"
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="@dimen/_120sdp"
-        android:layout_height="@dimen/_120sdp"
+        android:id="@+id/iv_posyandu"
+        android:layout_width="@dimen/_130sdp"
+        android:layout_height="@dimen/_130sdp"
         android:layout_gravity="center"
-        android:src="@drawable/logoposyandu"/>
+        android:src="@drawable/ic_newlogoputih"/>
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/interbold"
-        android:gravity="center"
-        android:textColor="#003399"
-        android:text="Posyandu"
-        android:textSize="@dimen/_20ssp"/>
+<!--    <TextView-->
+<!--        android:id="@+id/tv_posyandu"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:fontFamily="@font/monserratmedium"-->
+<!--        android:textStyle="bold"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/white"-->
+<!--        android:text="Posyandu"-->
+<!--        android:textSize="@dimen/_18ssp"/>-->
 
 </LinearLayout>

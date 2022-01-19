@@ -9,12 +9,13 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.posyanduapp.R
 
-class RecyclerAdapterAnak (private var anak: List<String>, private var ibu: List<String>) :
+class RecyclerAdapterAnak (private var anak: List<String>, private var ibu: List<String>, private var pos: List<String>) :
 RecyclerView.Adapter<RecyclerAdapterAnak.ViewHolder>(){
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         val nama_anak : TextView = itemView.findViewById(R.id.tvanak_namanak)
         val nama_ibu : TextView = itemView.findViewById(R.id.tvanak_namaibu)
+        val nama_pos : TextView = itemView.findViewById(R.id.tvanak_namaposyandu)
 
         init {
             itemView.setOnClickListener { v: View->
@@ -32,6 +33,8 @@ RecyclerView.Adapter<RecyclerAdapterAnak.ViewHolder>(){
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         holder.nama_anak.text = anak[position]
         holder.nama_ibu.text = ibu[position]
+        holder.nama_pos.text = pos[position]
+
     }
 
     override fun getItemCount(): Int {

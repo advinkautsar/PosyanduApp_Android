@@ -10,6 +10,25 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PosyanduApp">
         <activity
+            android:name=".ui.orangtua.DetailAnakActivity"
+            android:screenOrientation="portrait"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.ProfilOrtuActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.orangtua.BerandaOrtuActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.kader.DetailortuActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.kader.OrangtuaActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.kader.RiwayatJadwalPosyanduActivity"
             android:exported="false" />
         <activity
@@ -20,7 +39,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.kader.BerandakaderActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.bidan.AnakActivity"
             android:exported="false" />
@@ -32,7 +52,8 @@
             android:exported="false" />
         <activity
             android:name=".ui.bidan.PemeriksaankesehatanActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.bidan.KelolajadwalimunisasiActivity"
             android:exported="false" />
@@ -41,10 +62,12 @@
             android:exported="false" />
         <activity
             android:name=".ui.bidan.KesehatananakActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.bidan.BerandabidanActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.PendaftaranActivity"
             android:exported="false" />
