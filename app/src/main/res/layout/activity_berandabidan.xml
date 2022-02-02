@@ -27,7 +27,10 @@
                 android:layout_width="32dp"
                 android:layout_height="32dp"
                 android:layout_alignParentRight="true"
-                android:src="@drawable/logout" />
+                android:src="@drawable/logout"
+                android:clickable="true"
+                android:focusable="true"
+                android:foreground="?selectableItemBackground"/>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -142,13 +145,19 @@
                     android:padding="16dp"
                     android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground">
 
                     <ImageView
                         android:id="@+id/img_anak"
                         android:src="@drawable/boy"
                         android:layout_width="@dimen/_80sdp"
-                        android:layout_height="@dimen/_80sdp"/>
+                        android:layout_height="@dimen/_80sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?selectableItemBackground"/>
                     <TextView
                         android:fontFamily="@font/monserratbold"
                         android:layout_marginTop="@dimen/_8sdp"
@@ -176,13 +185,19 @@
                     android:padding="16dp"
                     android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground">
 
                     <ImageView
                         android:id="@+id/img_datarekap"
                         android:src="@drawable/pemeriksaankesehatan"
                         android:layout_width="@dimen/_80sdp"
-                        android:layout_height="@dimen/_80sdp"/>
+                        android:layout_height="@dimen/_80sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?selectableItemBackground"/>
                     <TextView
                         android:fontFamily="@font/monserratbold"
                         android:textColor="@color/black"
@@ -211,13 +226,19 @@
                     android:padding="16dp"
                     android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground">
 
                     <ImageView
                         android:id="@+id/img_rujukan"
                         android:src="@drawable/hospital"
                         android:layout_width="@dimen/_80sdp"
-                        android:layout_height="@dimen/_80sdp"/>
+                        android:layout_height="@dimen/_80sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?selectableItemBackground"/>
                     <TextView
                         android:fontFamily="@font/monserratbold"
                         android:layout_marginTop="@dimen/_8sdp"
@@ -244,13 +265,19 @@
                     android:padding="16dp"
                     android:gravity="center"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?selectableItemBackground">
 
                     <ImageView
                         android:id="@+id/img_kesehatananak"
                         android:src="@drawable/examination"
                         android:layout_width="@dimen/_80sdp"
-                        android:layout_height="@dimen/_80sdp"/>
+                        android:layout_height="@dimen/_80sdp"
+                        android:clickable="true"
+                        android:focusable="true"
+                        android:foreground="?selectableItemBackground"/>
                     <TextView
                         android:fontFamily="@font/monserratbold"
                         android:layout_marginTop="@dimen/_8sdp"

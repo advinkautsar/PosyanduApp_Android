@@ -10,9 +10,30 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PosyanduApp">
         <activity
-            android:name=".ui.orangtua.DetailAnakActivity"
-            android:screenOrientation="portrait"
+            android:name=".ui.orangtua.KontenTipKesActivity"
             android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.TipsKesehatanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.NotifikasiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.RiwayatRujukAnakActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.GrafikPertumbuhanActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.StatusGiziActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.RiwayatPemKesActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.DetailAnakActivity"
+            android:exported="false"
+            android:screenOrientation="portrait" />
         <activity
             android:name=".ui.orangtua.ProfilOrtuActivity"
             android:exported="false"

@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_4sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/riwayatpemkes_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12 Februari 2022"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/monserratbold"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Berat Badan :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/riwpemkes_bb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="4 Kg"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Panjang/Tinggi Badan :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/riwpemkes_PB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="15cm"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Lingkar Kepala :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/riwpemkes_LK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="-"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Pemberian Imunisasi 1 :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/riwpemkes_imun1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Polio 1"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Pemberian Imunisasi 2 : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/riwpemkes_imun2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Tidak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Pemberian Imunisasi 3 : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/riwpemkes_imun3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Tidak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Vitamin A ( Merah ) : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/riwpemkes_vitAmerah"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Ya"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Vitamin A ( Biru ) "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/riwpemkes_vitAbiru"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Tidak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Oralit : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/riwpemkes_oralit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Tidak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Fe-1 : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/riwpemkes_Fe1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Tidak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Fe-2 : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/riwpemkes_Fe2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Tidak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="PMT : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/riwpemkes_PMT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Tidak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Asi ekslusif :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/riwpemkes_asi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Tidak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Obat cacing :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/riwpemkes_obatcacing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Tidak"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_pemkes15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Nama Bidan (Pemeriksa) :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/riwpemkes_bidan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Ibu Astuti"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

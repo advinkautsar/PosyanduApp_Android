@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".ui.orangtua.KontenTipKesActivity">
+
+
+    <TextView
+        android:id="@+id/konten_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kenali tanda - tanda anak anda sehat"
+        android:elevation="16dp"
+        android:textSize="@dimen/_16ssp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:padding="@dimen/_16sdp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/konten_gambar"
+                android:padding="@dimen/_16sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_240sdp"
+                android:src="@mipmap/a"/>
+
+            <TextView
+                android:id="@+id/konten_isi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_16sdp"
+                android:textSize="@dimen/_14ssp"
+                android:fontFamily="@font/intermedium"
+                android:textStyle="normal"
+                android:textColor="@color/black"
+                android:text="@string/Definisi1"
+                android:justificationMode="inter_word"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+
+</LinearLayout>

@@ -25,6 +25,12 @@ class BerandaOrtuActivity : AppCompatActivity() {
         binding.imgAnak.setOnClickListener {
             startActivity(Intent(this, AnakActivity::class.java))
         }
+        binding.imgNotifikasi.setOnClickListener {
+            startActivity(Intent(this, NotifikasiActivity::class.java))
+        }
+        binding.imgTipkes.setOnClickListener {
+            startActivity(Intent(this, TipsKesehatanActivity::class.java))
+        }
 
     }
 }

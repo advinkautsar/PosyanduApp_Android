@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="@dimen/_4sdp"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="@dimen/_10sdp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_marginTop="@dimen/_5sdp"
+            android:id="@+id/statusgizi_tgl"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="12 Februari 2022"
+            android:textSize="@dimen/_12ssp"
+            android:fontFamily="@font/monserratbold"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_sgizi1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Berat Badan :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/sgizi_BB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="4 Kg"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_sgizi2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Panjang/Tinggi Badan :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/sgizi_PB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="15cm"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_sgizi3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Lingkar Kepala :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/sgizi_LK"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="-"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_sgizi4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Berat Badan / Umur :"
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/sgizi_BBUmur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Normal"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_sgizi5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Tinggi Badan / Umur : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/sgizi_TBUmur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Normal"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_sgizi6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Lingkar Kepala / Umur : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/sgizi_LKUmur"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="-"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_sgizi7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Berat Badan / Tinggi Badan : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+            <TextView
+                android:id="@+id/sgizi_BbTb"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Gizi Baik"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/text_sgizi8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="IMT / Umur : "
+                android:layout_alignParentStart="true"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+
+
+            <TextView
+                android:id="@+id/sgizi_IMT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:fontFamily="@font/monserratregular"
+                android:text="Gizi Baik"
+                android:textAlignment="textEnd"
+                android:textSize="@dimen/_10ssp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

@@ -19,7 +19,9 @@
             android:layout_height="@dimen/_30sdp"
             android:padding="5dp"
             android:src="@drawable/ic_baseline_arrow_back_24"
-            />
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"/>
 
         <ImageView
             android:id="@+id/logoImage"
@@ -59,12 +61,14 @@
             app:startIconDrawable="@drawable/ic_nama_pengguna"
             app:startIconTint="#003399"
             app:boxStrokeWidthFocused="2dp"
+            android:hint="Nama Pengguna"
+            app:helperText="Tidak boleh kosong*"
+            app:helperTextTextColor="@color/red"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nama Pengguna"
                 android:inputType="text"
                 android:fontFamily="@font/intermedium"/>
 
@@ -79,12 +83,15 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_kata_sandi"
             app:startIconTint="#003399"
-            app:boxStrokeWidthFocused="2dp">
+            app:boxStrokeWidthFocused="2dp"
+            app:helperText="Tidak boleh kosong*"
+            app:helperTextTextColor="@color/red"
+            android:hint="Kata Sandi"
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Kata Sandi"
                 android:inputType="textPassword"
                 android:fontFamily="@font/intermedium"/>
         </com.google.android.material.textfield.TextInputLayout>

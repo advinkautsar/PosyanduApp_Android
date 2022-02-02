@@ -27,7 +27,7 @@ class AnakActivity : AppCompatActivity() {
         }
 
         binding.rvAnak.layoutManager = LinearLayoutManager(this)
-        binding.rvAnak.adapter = RecyclerAdapterAnak(anaklist, ibulist, poslist)
+        binding.rvAnak.adapter = RecyclerAdapterAnak(this,anaklist, ibulist, poslist)
     }
 
     private fun addTolist(anak: String, ibu: String, pos: String){

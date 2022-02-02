@@ -56,6 +56,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_15sdp"
+            android:hint="Nama Pengguna"
+            app:helperText="Tidak boleh kosong*"
+            app:helperTextTextColor="@color/red"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_nama_pengguna"
             app:startIconTint="#003399"
@@ -65,7 +68,6 @@
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nama Pengguna"
                 android:inputType="text"
                 android:fontFamily="@font/intermedium"/>
 
@@ -80,14 +82,17 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_kata_sandi"
             app:startIconTint="#003399"
-            app:boxStrokeWidthFocused="2dp">
+            app:boxStrokeWidthFocused="2dp"
+            android:hint="Kata Sandi"
+            app:helperText="Tidak boleh kosong*"
+            app:helperTextTextColor="@color/red"
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Kata Sandi"
-                android:inputType="textPassword"
-                android:fontFamily="@font/intermedium"/>
+                android:fontFamily="@font/intermedium"
+                android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button

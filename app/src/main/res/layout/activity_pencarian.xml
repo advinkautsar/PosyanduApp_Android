@@ -17,9 +17,12 @@
             android:id="@+id/back_caritologin"
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"
             android:padding="5dp"
             android:src="@drawable/ic_baseline_arrow_back_24"
-            />
+            tools:ignore="SpeakableTextPresentCheck" />
 
         <ImageView
             android:id="@+id/logoImage"
@@ -59,12 +62,14 @@
             app:startIconDrawable="@drawable/ic_nama_pengguna"
             app:startIconTint="#003399"
             app:boxStrokeWidthFocused="2dp"
+            android:hint="Nama Lengkap"
+            app:helperText="Tidak boleh kosong*"
+            app:helperTextTextColor="@color/red"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Nama Lengkap"
                 android:inputType="text"
                 android:fontFamily="@font/intermedium"/>
 
@@ -78,12 +83,15 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_baseline_how_to_reg_24"
             app:startIconTint="#003399"
-            app:boxStrokeWidthFocused="2dp">
+            app:boxStrokeWidthFocused="2dp"
+            android:hint="NIK ( Nomor Induk Kependudukan )"
+            app:helperText="Tidak boleh kosong*"
+            app:helperTextTextColor="@color/red"
+            app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="NIK ( Nomor Induk Kependudukan )"
                 android:inputType="number"
                 android:fontFamily="@font/intermedium"/>
         </com.google.android.material.textfield.TextInputLayout>

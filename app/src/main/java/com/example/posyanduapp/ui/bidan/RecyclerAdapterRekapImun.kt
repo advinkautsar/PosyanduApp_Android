@@ -8,9 +8,20 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.posyanduapp.R
 
-class RecyclerAdapterRekapImun (private var vaksin1: List<String>, private var vaksin2: List<String>, private var vaksin3: List<String>, private var vaksin4: List< String>,
-private var vaksin5: List<String>, private var vaksin6: List<String>, private var vaksin7: List<String>, private var vaksin8: List<String>, private var vaksin9: List<String>,
-                               private var vaksin10: List<String>,private var vaksin11: List<String>, private var vaksin12: List<String>, private var vaksin13: List<String>,) :
+class RecyclerAdapterRekapImun
+    (private var vaksin1: List<String>,
+     private var vaksin2: List<String>,
+     private var vaksin3: List<String>,
+     private var vaksin4: List< String>,
+     private var vaksin5: List<String>,
+     private var vaksin6: List<String>,
+     private var vaksin7: List<String>,
+     private var vaksin8: List<String>,
+     private var vaksin9: List<String>,
+     private var vaksin10: List<String>,
+     private var vaksin11: List<String>,
+     private var vaksin12: List<String>,
+     private var vaksin13: List<String>,) :
 RecyclerView.Adapter<RecyclerAdapterRekapImun.ViewHolder>(){
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
@@ -31,7 +42,9 @@ RecyclerView.Adapter<RecyclerAdapterRekapImun.ViewHolder>(){
         init {
             itemView.setOnClickListener { v: View->
                 val position: Int = adapterPosition
-                Toast.makeText(itemView.context, "Kamu sedang memilih informasi ke ${position +1}", Toast.LENGTH_SHORT).show()
+                Toast.makeText(itemView.context,
+                    "Kamu sedang memilih informasi ke ${position +1}",
+                    Toast.LENGTH_SHORT).show()
             }
         }
 
