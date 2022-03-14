@@ -52,13 +52,11 @@
             android:textSize="@dimen/_12ssp"/>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/login_nama"
+            android:id="@+id/loginnama_textinputlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_15sdp"
             android:hint="Nama Pengguna"
-            app:helperText="Tidak boleh kosong*"
-            app:helperTextTextColor="@color/red"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_nama_pengguna"
             app:startIconTint="#003399"
@@ -66,6 +64,7 @@
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_nama"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -74,7 +73,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/login_sandi"
+            android:id="@+id/loginsandi_textinputlayout"
             app:passwordToggleEnabled="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -83,12 +82,10 @@
             app:startIconDrawable="@drawable/ic_kata_sandi"
             app:startIconTint="#003399"
             app:boxStrokeWidthFocused="2dp"
-            android:hint="Kata Sandi"
-            app:helperText="Tidak boleh kosong*"
-            app:helperTextTextColor="@color/red"
-            app:endIconMode="clear_text">
+            android:hint="Kata Sandi">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/login_sandi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/intermedium"
@@ -105,25 +102,6 @@
             android:textAllCaps="false"
             android:textSize="@dimen/_12ssp"/>
 
-        <Button
-            android:id="@+id/btn_kader"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:fontFamily="@font/interbold"
-            android:text="Beranda Kader"
-            android:textAllCaps="false"
-            android:textSize="@dimen/_12ssp"/>
-
-        <Button
-            android:id="@+id/btn_ortu"
-            android:layout_width="match_parent"
-            android:layout_height="@dimen/_45sdp"
-            android:layout_marginTop="@dimen/_5sdp"
-            android:fontFamily="@font/interbold"
-            android:text="Beranda Ortu"
-            android:textAllCaps="false"
-            android:textSize="@dimen/_12ssp"/>
 
         <LinearLayout
             android:layout_gravity="center_horizontal"
