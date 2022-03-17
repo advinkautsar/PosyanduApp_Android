@@ -1,12 +1,11 @@
 package com.example.posyanduapp.ui.orangtua
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.posyanduapp.R
 import com.example.posyanduapp.databinding.ActivityNotifikasiBinding
-import com.example.posyanduapp.ui.bidan.RecyclerAdapterRujukan
 
 class NotifikasiActivity : AppCompatActivity() {
 
@@ -18,6 +17,7 @@ class NotifikasiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityNotifikasiBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
 
         //intent
         binding.btnKembalinotif.setOnClickListener {
