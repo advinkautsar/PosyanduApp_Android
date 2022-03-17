@@ -53,7 +53,7 @@
             android:textSize="@dimen/_12ssp"/>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/pendaftaran_namapengguna"
+            android:id="@+id/namapengguna_textinputlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_15sdp"
@@ -62,11 +62,10 @@
             app:startIconTint="#003399"
             app:boxStrokeWidthFocused="2dp"
             android:hint="Nama Pengguna"
-            app:helperText="Tidak boleh kosong*"
-            app:helperTextTextColor="@color/red"
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pendaftaran_namapengguna"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="text"
@@ -75,7 +74,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/pendaftaran_katasandi"
+            android:id="@+id/katasandi_textinputlayout"
             app:passwordToggleEnabled="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -84,12 +83,10 @@
             app:startIconDrawable="@drawable/ic_kata_sandi"
             app:startIconTint="#003399"
             app:boxStrokeWidthFocused="2dp"
-            app:helperText="Tidak boleh kosong*"
-            app:helperTextTextColor="@color/red"
-            android:hint="Kata Sandi"
-            app:endIconMode="clear_text">
+            android:hint="Kata Sandi">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pendaftaran_katasandi"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
@@ -97,7 +94,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/pendaftaran_telepon"
+            android:id="@+id/telepon_textinputlayout"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -108,6 +105,7 @@
             app:endIconMode="clear_text">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pendaftaran_telepon"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:hint="Nomor Handphone Aktif"
