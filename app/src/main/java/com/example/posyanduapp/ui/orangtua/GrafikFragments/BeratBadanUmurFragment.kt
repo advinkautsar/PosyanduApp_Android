@@ -18,6 +18,8 @@ import kotlinx.android.synthetic.main.fragment_berat_badan_umur.*
 
 class BeratBadanUmurFragment : Fragment() {
 
+
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

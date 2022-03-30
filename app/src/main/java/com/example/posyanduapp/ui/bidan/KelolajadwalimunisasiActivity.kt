@@ -44,6 +44,7 @@ class KelolajadwalimunisasiActivity : AppCompatActivity() {
         setContentView(binding.root)
         getlistanak()
         getlistImunisasi()
+        getbidan()
 
         //datepicker
         val calendar = Calendar.getInstance()
@@ -174,7 +175,7 @@ class KelolajadwalimunisasiActivity : AppCompatActivity() {
 
         ApiService.endpoint.postJadwalImunisasi(
             binding.kelolaimunisasiTanggal.text.toString()
-                ,"1",
+                ,id_bidan.toString(),
             nik_anak.toString(),
             id_imun.toString()
         ).enqueue(object : Callback<ResponsePesan> {

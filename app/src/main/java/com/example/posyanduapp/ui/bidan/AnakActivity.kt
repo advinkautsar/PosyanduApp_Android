@@ -25,9 +25,7 @@ import retrofit2.Response
 
 class AnakActivity : AppCompatActivity() {
 
-    private var anaklist = mutableListOf<String>()
-    private var ibulist = mutableListOf<String>()
-    private var poslist = mutableListOf<String>()
+
 
     lateinit var rvListAnak: RecyclerView
     lateinit var adapter: AdapterAnak

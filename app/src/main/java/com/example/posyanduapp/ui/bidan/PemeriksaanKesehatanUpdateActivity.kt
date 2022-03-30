@@ -39,7 +39,7 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
     var id_imun :Int = 0
     var id_imun2 :Int = 0
     var id_imun3 :Int = 0
-     var nik_anak: String=""
+    var nik_anak: String=""
     var idnya: String = ""
     var listAnak: ArrayList<ListAnak.Result> = ArrayList()
     var listImunisasi: ArrayList<ListImunisasi.Result> = ArrayList()
@@ -456,6 +456,7 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
 
         })
     }
+
     private fun getbidan() {
         val user = s.getUser()!!
         Log.d("idne mase",user.id.toString())

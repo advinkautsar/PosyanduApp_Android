@@ -20,29 +20,12 @@ import retrofit2.Response
 
 class RiwayatPemKesActivity : AppCompatActivity() {
 
-    private var tanngallist = mutableListOf<String>()
-    private var pemkes1list = mutableListOf<String>()
-    private var pemkes2list = mutableListOf<String>()
-    private var pemkes3list = mutableListOf<String>()
-    private var pemkes4list = mutableListOf<String>()
-    private var pemkes5list = mutableListOf<String>()
-    private var pemkes6list = mutableListOf<String>()
-    private var pemkes7list = mutableListOf<String>()
-    private var pemkes8list = mutableListOf<String>()
-    private var pemkes9list = mutableListOf<String>()
-    private var pemkes10list = mutableListOf<String>()
-    private var pemkes11list = mutableListOf<String>()
-    private var pemkes12list = mutableListOf<String>()
-    private var pemkes13list = mutableListOf<String>()
-    private var pemkes14list = mutableListOf<String>()
-    private var pemkes15list = mutableListOf<String>()
     var idnya: String = ""
     var namanya: String = ""
     lateinit var rvListPemkes : RecyclerView
     lateinit var adapter: AdapterPemeriksaan
-
-
     private lateinit var binding : ActivityRiwayatPemKesBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityRiwayatPemKesBinding.inflate(layoutInflater)

@@ -44,6 +44,7 @@ class PemeriksaankesehatanActivity : AppCompatActivity() {
     private lateinit var s: SharedPref
     var listAnak: ArrayList<ListAnak.Result> = ArrayList()
     var listImunisasi: ArrayList<ListImunisasi.Result> = ArrayList()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPemeriksaankesehatanBinding.inflate(layoutInflater)
@@ -297,7 +298,7 @@ class PemeriksaankesehatanActivity : AppCompatActivity() {
                 if (binding.periksaAsi.text.toString().isEmpty()||binding.periksaFe1.text.toString().isEmpty()||
                     binding.periksaFe2.text.toString().isEmpty()||binding.periksaOralit.text.toString().isEmpty()||binding.periksaObatcacing.text.toString().isEmpty()||
                     binding.periksaImunisasi1.text.toString().isEmpty()||binding.periksaImunisasi2.text.toString().isEmpty()||binding.periksaImunisasi3.text.toString().isEmpty()||
-                   binding.periksaNamaanak.text.toString().isEmpty()||binding.periksaPMT.text.toString().isEmpty()||
+                    binding.periksaNamaanak.text.toString().isEmpty()||binding.periksaPMT.text.toString().isEmpty()||
                     binding.periksaVitAbiru.text.toString().isEmpty()|| binding.periksaVitAmerah.text.toString().isEmpty()
                 ) {
 
