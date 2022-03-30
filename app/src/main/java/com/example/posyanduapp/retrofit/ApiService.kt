@@ -7,8 +7,8 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiService {
 
-//    val BASE_URL: String = "http://4fee-125-164-123-55.ngrok.io/api/"
-    val BASE_URL: String = "http://192.168.1.4/PosyanduApp_Website/api/"
+    val BASE_URL: String = "https://9b1e-36-81-120-209.ngrok.io/api/"
+//    val BASE_URLs: String = "http://192.168.1.4/PosyanduApp_Websites/api/"
 
     val interceptor: HttpLoggingInterceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY

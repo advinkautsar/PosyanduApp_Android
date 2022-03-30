@@ -53,28 +53,29 @@
             android:textColor="#838391"
             android:textSize="@dimen/_12ssp"/>
 
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            -->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_15sdp"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+<!--            app:startIconDrawable="@drawable/ic_nama_pengguna"-->
+<!--            app:startIconTint="#003399"-->
+<!--            app:boxStrokeWidthFocused="2dp"-->
+<!--            android:hint="Nama Lengkap"-->
+<!--            app:endIconMode="clear_text">-->
+
+<!--            <com.google.android.material.textfield.TextInputEditText-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:id="@+id/pencarian_namalengkap"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:inputType="text"-->
+<!--                android:fontFamily="@font/intermedium"/>-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/pencarian_namalengkap"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_15sdp"
-            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
-            app:startIconDrawable="@drawable/ic_nama_pengguna"
-            app:startIconTint="#003399"
-            app:boxStrokeWidthFocused="2dp"
-            android:hint="Nama Lengkap"
-            app:endIconMode="clear_text">
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="text"
-                android:fontFamily="@font/intermedium"/>
-
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/pencarian_nik"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_5sdp"
@@ -87,6 +88,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
+                android:id="@+id/pencarian_nik"
                 android:layout_height="wrap_content"
                 android:inputType="number"
                 android:fontFamily="@font/intermedium"/>

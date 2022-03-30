@@ -8,6 +8,18 @@
     android:orientation="vertical"
     tools:context=".ui.orangtua.RiwayatPemKesActivity">
 
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swlayout"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
     <LinearLayout
         android:id="@+id/toolbar_riwayatPemKes"
         android:layout_width="match_parent"
@@ -71,5 +83,8 @@
         android:layout_marginBottom="@dimen/_15sdp"
         tools:itemCount="17"
         tools:listitem="@layout/item_layout_riwayatpemkes"/>
+
+        </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>

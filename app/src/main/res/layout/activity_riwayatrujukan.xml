@@ -6,6 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".ui.bidan.RiwayatrujukanActivity">
 
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/swlayout"
+        >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
     <LinearLayout
         android:id="@+id/toolbar_rujukan"
         android:layout_width="match_parent"
@@ -51,6 +64,10 @@
         tools:itemCount="17"
         tools:listitem="@layout/item_layout_rujukan"/>
 
+
+
+    </LinearLayout>
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:id="@+id/fab_riwayatrujukan"
         android:layout_width="wrap_content"

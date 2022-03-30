@@ -104,6 +104,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
+                android:visibility="gone"
                 android:id="@+id/jadwalposyandu_alamatkegiatan"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_70sdp"
@@ -122,7 +123,7 @@
 
             </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
-                android:id="@+id/jadwalposyandu_keterangan"
+
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_100sdp"
                 android:layout_marginTop="@dimen/_10sdp"
@@ -132,6 +133,7 @@
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_80sdp"
+                    android:id="@+id/jadwalposyandu_keterangan"
                     android:fontFamily="@font/intermedium"
                     android:gravity="top"
                     android:hint="Keterangan Kegiatan"

@@ -1,19 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.posyanduapp">
-    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/logo"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/logo"
         android:supportsRtl="true"
-        android:usesCleartextTraffic="true"
-
-        android:theme="@style/Theme.PosyanduApp">
+        android:theme="@style/Theme.PosyanduApp"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.bidan.PemeriksaanKesehatanUpdateActivity"></activity>
+        <activity android:name=".ui.bidan.RujukanUpdateActivity" />
         <activity
             android:name=".ui.orangtua.KontenTipKesActivity"
             android:exported="false" />
@@ -116,6 +119,7 @@
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
         <service
             android:name=".service.FirebaseNotification"
             android:exported="false">
