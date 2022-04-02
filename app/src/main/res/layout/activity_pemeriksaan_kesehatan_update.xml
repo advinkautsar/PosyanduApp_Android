@@ -271,7 +271,24 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                >
 
+                <EditText
+                    android:id="@+id/periksa_tanggalpemeriksaan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableRight="@drawable/ic_baseline_date_range_24"
+                    android:fontFamily="@font/intermedium"
+                    android:hint="Tanggal Pemeriksaan "
+                    android:inputType="none"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
             <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"

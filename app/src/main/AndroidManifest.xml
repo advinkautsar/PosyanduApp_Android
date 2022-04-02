@@ -80,14 +80,17 @@
             android:name=".ui.bidan.RiwayatrujukanActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.bidan.PemeriksaankesehatanActivity"
+            android:name=".ui.bidan.RiwayatRujukanPerAnakBidan"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bidan.PemeriksaankesehatanCreateActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.bidan.KelolajadwalimunisasiActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.bidan.RujukanActivity"
+            android:name=".ui.bidan.RujukanCreateActivity"
             android:exported="false" />
         <activity
             android:name=".ui.bidan.KesehatananakActivity"

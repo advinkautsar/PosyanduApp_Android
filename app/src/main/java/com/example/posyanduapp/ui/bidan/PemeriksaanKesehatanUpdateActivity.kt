@@ -1,5 +1,6 @@
 package com.example.posyanduapp.ui.bidan
 
+import android.app.DatePickerDialog
 import android.content.Intent
 import android.os.Bundle
 import android.util.Log
@@ -81,6 +82,25 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
         getlistanak()
         getbidan()
         getStatus()
+
+        //datepicker show
+        //datepicker
+        val calendar = Calendar.getInstance()
+        val year = calendar[Calendar.YEAR]
+        val month = calendar[Calendar.MONTH]
+        val day = calendar[Calendar.DAY_OF_MONTH]
+
+        binding.periksaTanggalpemeriksaan.setOnClickListener {
+            val datePickerDialog = DatePickerDialog(
+                this, { view, year, month, day ->
+                    var month = month
+                    month = month + 1
+                    val urutan = "$year-$month-$day"
+                    binding.periksaTanggalpemeriksaan.setText(urutan)
+                }, year, month, day
+            )
+            datePickerDialog.show()
+        }
 
         binding.periksaNamaanak.onItemClickListener =
             AdapterView.OnItemClickListener { arg0, arg1, position, arg3 ->
@@ -193,7 +213,7 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
                     binding.periksaFe2.text.toString().isEmpty()||binding.periksaOralit.text.toString().isEmpty()||binding.periksaObatcacing.text.toString().isEmpty()||
                     binding.periksaImunisasi1.text.toString().isEmpty()||binding.periksaImunisasi2.text.toString().isEmpty()||binding.periksaImunisasi3.text.toString().isEmpty()||
                     binding.periksaNamaanak.text.toString().isEmpty()||binding.periksaPMT.text.toString().isEmpty()||
-                    binding.periksaVitAbiru.text.toString().isEmpty()|| binding.periksaVitAmerah.text.toString().isEmpty()
+                    binding.periksaVitAbiru.text.toString().isEmpty()|| binding.periksaVitAmerah.text.toString().isEmpty() || binding.periksaTanggalpemeriksaan.text.trim().isEmpty()
                 ) {
 
                     pDialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
@@ -235,7 +255,7 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
 //                        id_bidan = Bidan.id!!
                         Log.d("responsepemeks", PemkesTunggal.toString())
                         nik_anak = PemkesTunggal.nik_anak.toString()
-
+                        binding.periksaTanggalpemeriksaan.setText(PemkesTunggal.tanggal_pemeriksaan)
                         id_imun = PemkesTunggal.imunisasi_id_1!!
                         id_imun2 = PemkesTunggal.imunisasi_id_2!!
                         id_imun3 = PemkesTunggal.imunisasi_id_3!!
@@ -247,7 +267,6 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
                         obatcacings = PemkesTunggal.obat_cacing.toString()
                         vitABirus = PemkesTunggal.vitA_biru.toString()
                         vitAmerahs =PemkesTunggal.vitA_merah.toString()
-
                         binding.periksaAsi.setText(PemkesTunggal.asi_ekslusif)
 ////
 ////                        val a= adapter!!.getPosition(PemkesTunggal.asi_ekslusif)
@@ -415,8 +434,9 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
             pmts,
             asis,
             oralits,
-            obatcacings
-        ).enqueue(object : Callback<ResponsePesan> {
+            obatcacings,
+            binding.periksaTanggalpemeriksaan.text.toString()
+            ).enqueue(object : Callback<ResponsePesan> {
             override fun onResponse(
                 call: Call<ResponsePesan>,
                 response: Response<ResponsePesan>

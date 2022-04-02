@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "561165719471",
+    "project_id": "posyanduapp-51f7c",
+    "storage_bucket": "posyanduapp-51f7c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:561165719471:android:51f3fae06e947716fac15a",
+        "android_client_info": {
+          "package_name": "com.example.posyanduapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "561165719471-3vptv2rg67l96m15uathvoauc1piqtut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.posyanduapp",
+            "certificate_hash": "eb28c4f3d104760a4632bd6c5b49209d9f12bec7"
+          }
+        },
+        {
+          "client_id": "561165719471-dr9iu5iguokp65vvslve6p6092vcvc2g.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.posyanduapp",
+            "certificate_hash": "2cbb75ce68215b71148b2f6dde3ba0a3aacc3dcd"
+          }
+        },
+        {
+          "client_id": "561165719471-g0i0ontm98pqtpv6rrhim5rcr8nub34o.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAHgNNGB26SUPDhVdCxXw8yazG99wCq7kE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "561165719471-g0i0ontm98pqtpv6rrhim5rcr8nub34o.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

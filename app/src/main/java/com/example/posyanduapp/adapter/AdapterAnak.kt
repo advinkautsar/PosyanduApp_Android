@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.posyanduapp.R
 import com.example.posyanduapp.databinding.ItemLayoutAnakBinding
 import com.example.posyanduapp.model.ListAnak
+import com.example.posyanduapp.ui.bidan.RiwayatRujukanPerAnakBidan
 import com.example.posyanduapp.ui.orangtua.DetailAnakActivity
 import com.example.posyanduapp.ui.orangtua.GrafikPertumbuhanActivity
 import com.example.posyanduapp.ui.orangtua.RiwayatPemKesActivity
@@ -75,12 +76,15 @@ class AdapterAnak (
             when(it.itemId){
                 R.id.menu_detail->{
                     val intent = Intent(itemView.context, DetailAnakActivity::class.java)
-
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
                     itemView.getContext().startActivity(intent);
                     true
                 }
                 R.id.menu_grafik->{
                     val intent = Intent(itemView.context, GrafikPertumbuhanActivity::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
                     itemView.getContext().startActivity(intent);
                     true
                 }
@@ -93,7 +97,9 @@ class AdapterAnak (
                     true
                 }
                 R.id.menu_rujukan->{
-                    val intent = Intent(itemView.context, RiwayatRujukAnakActivity::class.java)
+                    val intent = Intent(itemView.context, RiwayatRujukanPerAnakBidan::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
                     itemView.getContext().startActivity(intent);
                     true
                 }

@@ -15,7 +15,6 @@ import com.example.posyanduapp.model.ListRujukan
 import com.example.posyanduapp.model.ResponsePesan
 import com.example.posyanduapp.retrofit.ApiService
 import com.example.posyanduapp.ui.bidan.BerandabidanActivity
-import com.example.posyanduapp.ui.bidan.RujukanActivity
 import com.example.posyanduapp.ui.bidan.RujukanUpdateActivity
 import retrofit2.Call
 import retrofit2.Callback

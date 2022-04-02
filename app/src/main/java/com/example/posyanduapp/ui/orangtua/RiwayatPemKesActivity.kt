@@ -30,6 +30,7 @@ class RiwayatPemKesActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityRiwayatPemKesBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         rvListPemkes = binding.rvRiwayatPemKes
         idnya = intent.getStringExtra("nik").toString()
         namanya= intent.getStringExtra("nama").toString()
@@ -41,6 +42,8 @@ class RiwayatPemKesActivity : AppCompatActivity() {
         binding.btnKembaliriwayatPemKes.setOnClickListener {
             startActivity(Intent(this, AnakActivity::class.java))
         }
+
+        //swipe refresh
         binding.swlayout.setOnRefreshListener {
             // Handler untuk menjalankan jeda selama 5 detik
             Handler().postDelayed({ // Berhenti berputar/refreshing
@@ -50,13 +53,7 @@ class RiwayatPemKesActivity : AppCompatActivity() {
             }, 3000)
 
         }
-        //add content into recyclerview
-//        postToList()
-        //recyclerview
-//        binding.rvRiwayatPemKes.layoutManager = LinearLayoutManager(this)
-//        binding.rvRiwayatPemKes.adapter = RecyclerAdapterRiwPemkes (tanngallist, pemkes1list, pemkes2list,
-//        pemkes3list, pemkes4list, pemkes5list, pemkes6list, pemkes7list, pemkes8list, pemkes9list, pemkes10list, pemkes11list,
-//        pemkes12list, pemkes13list, pemkes14list, pemkes15list)
+
     }
 
     private fun getlistPemkes(ids: String) {
@@ -79,7 +76,7 @@ class RiwayatPemKesActivity : AppCompatActivity() {
 
                         } else {
                             Toast.makeText(
-                                this@RiwayatPemKesActivity, "Tidak ada List",
+                                this@RiwayatPemKesActivity, "Belum ada List",
                                 Toast.LENGTH_SHORT
                             ).show()
                         }
@@ -99,37 +96,4 @@ class RiwayatPemKesActivity : AppCompatActivity() {
         }
     }
 
-//    private fun postToList() {
-//        for (i in 1..10){
-//            addTolist( "21 - 02 - 2022", "3 Kg", "30cm", "-",
-//            "Polio 1", "Tidak", "Tidak", "Tidak", "Tidak", "Tidak",
-//            "Tidak", "Tidak", "Tidak", "Tidak", "Tidak", "Bu Ida")
-//
-//        }
-//    }
-//
-//    private fun addTolist( tgl : String, pemkes1 : String, pemkes2 : String, pemkes3 : String, pemkes4 : String, pemkes5 : String,
-//                           pemkes6 : String, pemkes7 : String, pemkes8 : String, pemkes9 : String, pemkes10 : String, pemkes11 : String,
-//                           pemkes12 : String, pemkes13 : String, pemkes14 : String, pemkes15 : String,) {
-//        tanngallist.add(tgl)
-//        pemkes1list.add(pemkes1)
-//        pemkes2list.add(pemkes2)
-//        pemkes3list.add(pemkes3)
-//        pemkes4list.add(pemkes4)
-//        pemkes5list.add(pemkes5)
-//        pemkes6list.add(pemkes6)
-//        pemkes7list.add(pemkes7)
-//        pemkes8list.add(pemkes8)
-//        pemkes9list.add(pemkes9)
-//        pemkes10list.add(pemkes10)
-//        pemkes11list.add(pemkes11)
-//        pemkes12list.add(pemkes12)
-//        pemkes13list.add(pemkes13)
-//        pemkes14list.add(pemkes14)
-//        pemkes15list.add(pemkes15)
-//
-//
-//
-//
-//    }
 }

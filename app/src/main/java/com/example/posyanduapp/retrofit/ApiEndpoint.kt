@@ -1,5 +1,6 @@
 package com.example.posyanduapp.retrofit
 
+import com.example.posyanduapp.Model.ListRujukanAnak
 import com.example.posyanduapp.Model.ResponRegister
 import com.example.posyanduapp.model.*
 import okhttp3.RequestBody
@@ -71,12 +72,15 @@ interface ApiEndpoint {
     fun getRujukan(
     ): Call<ListRujukan>
 
+    @GET("ambil_datarujukan/{id}")
+    fun getallRujukanID(
+        @Path("id") id:String,
+    ): Call<ListRujukanAnak>
+
     @GET("show_datarujukan/{id}")
     fun getRujukanID(
         @Path("id") id:Int,
     ): Call<GetRujukan>
-
-
 
     @FormUrlEncoded
     @POST("tambah_datarujukan")
@@ -122,6 +126,8 @@ interface ApiEndpoint {
         @Field("asi_ekslusif") asi_ekslusif: String,
         @Field("oralit")oralit : String,
         @Field("obat_cacing")obat_cacing : String,
+        @Field("tanggal_pemeriksaan")tanggal_pemeriksaan : String,
+
         ): Call<ResponsePesan>
 
     @FormUrlEncoded
@@ -141,6 +147,8 @@ interface ApiEndpoint {
         @Field("asi_ekslusif") asi_ekslusif: String,
         @Field("oralit")oralit : String,
         @Field("obat_cacing")obat_cacing : String,
+        @Field("tanggal_pemeriksaan")tanggal_pemeriksaan : String,
+
         ): Call<ResponsePesan>
 
 

@@ -37,7 +37,7 @@ class RiwayatrujukanActivity : AppCompatActivity() {
 
         binding.fabRiwayatrujukan.setOnClickListener {
 //            startActivity(Intent(this, RujukanActivity::class.java))
-            val intent = Intent(this, RujukanActivity::class.java)
+            val intent = Intent(this, RujukanCreateActivity::class.java)
 //            intent.putExtra("ids","0")
             startActivity(intent)
         }

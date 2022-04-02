@@ -49,7 +49,7 @@ class AdapterPemeriksaan (
         // set current item of result response tarif data
         val currentItem = data[position]
         // set value to the holder view
-        holder.binding.riwayatpemkesTgl.text = currentItem.updatedAt
+        holder.binding.riwayatpemkesTgl.text = currentItem.tanggal_pemeriksaan
         holder.binding.riwpemkesAsi.text = currentItem.asi_ekslusif
         holder.binding.riwpemkesFe1.text = currentItem.Fe_1
         holder.binding.riwpemkesFe2.text = currentItem.Fe_2

@@ -30,7 +30,7 @@ class GetPemeriksaan  (
         val id_posyandu: Int?,
         val nama: String?,
         val nama_anak: String?,
-        val tanggal_rujukan: String?,
+        val tanggal_pemeriksaan: String?,
         val updatedAt: String?,
     )
 

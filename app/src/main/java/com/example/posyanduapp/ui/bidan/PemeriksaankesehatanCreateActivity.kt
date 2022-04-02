@@ -1,5 +1,6 @@
 package com.example.posyanduapp.ui.bidan
 
+import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,7 +11,6 @@ import android.widget.Toast
 import cn.pedant.SweetAlert.SweetAlertDialog
 import com.example.posyanduapp.Helper.SharedPref
 import com.example.posyanduapp.R
-import com.example.posyanduapp.databinding.ActivityKelolajadwalimunisasiBinding
 import com.example.posyanduapp.databinding.ActivityPemeriksaankesehatanBinding
 import com.example.posyanduapp.model.Bidan
 import com.example.posyanduapp.model.ListAnak
@@ -21,9 +21,9 @@ import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 import java.math.BigInteger
-import java.util.ArrayList
+import java.util.*
 
-class PemeriksaankesehatanActivity : AppCompatActivity() {
+class PemeriksaankesehatanCreateActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPemeriksaankesehatanBinding
     lateinit var Bidan: Bidan.Result
@@ -87,53 +87,29 @@ class PemeriksaankesehatanActivity : AppCompatActivity() {
                 Log.d("your selected item23", "" + id_imun3)
             }
 
+        //datepicker show
+        //datepicker
+        val calendar = Calendar.getInstance()
+        val year = calendar[Calendar.YEAR]
+        val month = calendar[Calendar.MONTH]
+        val day = calendar[Calendar.DAY_OF_MONTH]
+
+        binding.periksaTanggalpemeriksaan.setOnClickListener {
+            val datePickerDialog = DatePickerDialog(
+                this, { view, year, month, day ->
+                    var month = month
+                    month = month + 1
+                    val urutan = "$year-$month-$day"
+                    binding.periksaTanggalpemeriksaan.setText(urutan)
+                }, year, month, day
+            )
+            datePickerDialog.show()
+        }
+
 
     }
     fun dropdown (){
-//        //dropdown nama anak
-//        val nama_anak = resources.getStringArray(R.array.daftar_namaanak)
-//        val adapter = ArrayAdapter(
-//            this,
-//            R.layout.dropdown_listanak,
-//            nama_anak
-//        )
-//        with(binding.periksaNamaanak){
-//            setAdapter(adapter)
-//        }
 //
-//        //dropdown imunisasi1
-//        val imunisasi1 = resources.getStringArray(R.array.imunisasi)
-//        val adapterimun1 = ArrayAdapter(
-//            this,
-//            R.layout.dropdown_listanak,
-//            imunisasi1
-//        )
-//        with(binding.periksaImunisasi1){
-//            setAdapter(adapterimun1)
-//        }
-//
-//        //dropdown imunisasi2
-//        val imunisasi2 = resources.getStringArray(R.array.imunisasi)
-//        val adapterimun2 = ArrayAdapter(
-//            this,
-//            R.layout.dropdown_listanak,
-//            imunisasi2
-//        )
-//        with(binding.periksaImunisasi2){
-//            setAdapter(adapterimun2)
-//        }
-//
-//        //dropdown imunisasi3
-//        val imunisasi3 = resources.getStringArray(R.array.imunisasi)
-//        val adapterimun3 = ArrayAdapter(
-//            this,
-//            R.layout.dropdown_listanak,
-//            imunisasi3
-//        )
-//        with(binding.periksaImunisasi3){
-//            setAdapter(adapterimun3)
-//        }
-
         //dropdown vitA merah
         val vit1 = resources.getStringArray(R.array.obat)
         val adaptervit1 = ArrayAdapter(
@@ -272,6 +248,7 @@ class PemeriksaankesehatanActivity : AppCompatActivity() {
         with(binding.periksaObatcacing){
             setAdapter(adaptercacing)
         }
+
         binding.periksaObatcacing.onItemClickListener =
             AdapterView.OnItemClickListener { arg0, arg1, position, arg3 ->
                 obatcacings=  obatcacing.get(position)
@@ -299,7 +276,7 @@ class PemeriksaankesehatanActivity : AppCompatActivity() {
                     binding.periksaFe2.text.toString().isEmpty()||binding.periksaOralit.text.toString().isEmpty()||binding.periksaObatcacing.text.toString().isEmpty()||
                     binding.periksaImunisasi1.text.toString().isEmpty()||binding.periksaImunisasi2.text.toString().isEmpty()||binding.periksaImunisasi3.text.toString().isEmpty()||
                     binding.periksaNamaanak.text.toString().isEmpty()||binding.periksaPMT.text.toString().isEmpty()||
-                    binding.periksaVitAbiru.text.toString().isEmpty()|| binding.periksaVitAmerah.text.toString().isEmpty()
+                    binding.periksaVitAbiru.text.toString().isEmpty()|| binding.periksaVitAmerah.text.toString().isEmpty() || binding.periksaTanggalpemeriksaan.text.trim().isEmpty()
                 ) {
 
                     pDialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
@@ -388,7 +365,8 @@ class PemeriksaankesehatanActivity : AppCompatActivity() {
             pmts,
             asis,
             oralits,
-            obatcacings
+            obatcacings,
+            binding.periksaTanggalpemeriksaan.text.toString(),
         ).enqueue(object : Callback<ResponsePesan> {
             override fun onResponse(
                 call: Call<ResponsePesan>,
@@ -398,17 +376,17 @@ class PemeriksaankesehatanActivity : AppCompatActivity() {
                 val pesanan = response.body()?.pesan
 
                 if (status!!) {
-                    Toast.makeText(this@PemeriksaankesehatanActivity, pesanan, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@PemeriksaankesehatanCreateActivity, pesanan, Toast.LENGTH_LONG).show()
 //                    this@KelolajadwalimunisasiActivity.fragmentManager?.popBackStack()
                     finish()
                 } else {
-                    Toast.makeText(this@PemeriksaankesehatanActivity, pesanan, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@PemeriksaankesehatanCreateActivity, pesanan, Toast.LENGTH_LONG).show()
                 }
             }
 
             override fun onFailure(call: Call<ResponsePesan>, t: Throwable) {
                 t.printStackTrace()
-                Toast.makeText(this@PemeriksaankesehatanActivity, "Kesalahan tidak terduga!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@PemeriksaankesehatanCreateActivity, "Kesalahan tidak terduga!", Toast.LENGTH_LONG).show()
 
             }
 

@@ -9,7 +9,8 @@ import androidx.appcompat.view.menu.ActionMenuItemView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.posyanduapp.R
 
-class RecyclerAdapterRujukan (private var namaposyandu: List<String>, private var tanggalrujukan: List<String>, private var namaanak: List<String>,
+class RecyclerAdapterRujukan (
+    private var namaposyandu: List<String>, private var tanggalrujukan: List<String>, private var namaanak: List<String>,
                               private var namabidan: List<String>, private var namapuskesmas: List<String>, private var penyakit: List<String>) :
 RecyclerView.Adapter<RecyclerAdapterRujukan.ViewHolder>(){
 
