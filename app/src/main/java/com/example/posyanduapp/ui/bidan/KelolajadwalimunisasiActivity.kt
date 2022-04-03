@@ -42,6 +42,8 @@ class KelolajadwalimunisasiActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityKelolajadwalimunisasiBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        s = SharedPref(this)
         getlistanak()
         getlistImunisasi()
         getbidan()

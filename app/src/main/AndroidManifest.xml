@@ -15,7 +15,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PosyanduApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.bidan.PemeriksaanKesehatanUpdateActivity"></activity>
+        <activity
+            android:name=".ui.bidan.DetailAnakBidan"
+            android:exported="false" />
+        <activity android:name=".ui.bidan.PemeriksaanKesehatanUpdateActivity" />
         <activity android:name=".ui.bidan.RujukanUpdateActivity" />
         <activity
             android:name=".ui.orangtua.KontenTipKesActivity"

@@ -19,6 +19,7 @@ import java.math.BigInteger
 import java.util.*
 
 class RujukanUpdateActivity : AppCompatActivity() {
+
     private lateinit var binding : ActivityRujukanUpdateBinding
     var nik_anak: String=""
     var listAnak: ArrayList<ListAnak.Result> = ArrayList()
@@ -32,6 +33,7 @@ class RujukanUpdateActivity : AppCompatActivity() {
     var listPuskesmas: ArrayList<ListPuskesmas.Result> = ArrayList()
     private lateinit var s: SharedPref
     lateinit var pDialog: SweetAlertDialog
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 //        setContentView(R.layout.activity_rujukan_update)
@@ -50,6 +52,7 @@ class RujukanUpdateActivity : AppCompatActivity() {
         getlisPuskesmas()
         getlistanak()
         getbidan()
+
         binding.rujukanNamaanak.onItemClickListener =
             AdapterView.OnItemClickListener { arg0, arg1, position, arg3 ->
                 nik_anak = listAnak.get(position).nik_anak.toString()

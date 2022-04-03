@@ -1,5 +1,6 @@
 package com.example.posyanduapp.retrofit
 
+import com.example.posyanduapp.Model.GetDetailAnak
 import com.example.posyanduapp.Model.ListRujukanAnak
 import com.example.posyanduapp.Model.ResponRegister
 import com.example.posyanduapp.model.*
@@ -228,6 +229,14 @@ interface ApiEndpoint {
         @Field("nik_anak")nik_anak: String,
         @Field("no_kartu") no_kartu: String,
     ): Call<ResponsePesan>
+
+
+    // Get Detail Anak
+    @GET("ambil_data_anak/{id}")
+    fun getDetailAnakID(
+        @Path("id") id:String,
+    ): Call<GetDetailAnak>
+
 
 
 

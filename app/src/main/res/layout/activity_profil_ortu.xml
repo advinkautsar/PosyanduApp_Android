@@ -55,8 +55,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_15sdp"
                 android:fontFamily="@font/monserratbold"
-                android:text="Data Diri"
                 android:gravity="center"
+                android:text="Data Diri"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_13ssp"
                 android:textStyle="bold" />
@@ -69,25 +69,27 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                     android:layout_width="@dimen/_138sdp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="0dp"
-                    android:hint="Nama Ayah"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    android:hint="Nama Ayah">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_namaayah"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:paddingStart="0dp"
                         android:background="@color/white"
                         android:fontFamily="@font/monserratregular"
+                        android:inputType="text"
+                        android:paddingStart="0dp"
                         android:text="Budi Doremi"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="@dimen/_138sdp"
                     android:layout_height="wrap_content"
@@ -95,47 +97,51 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_NIKayah"
-                        android:background="@color/white"
-                        android:layout_marginStart="@dimen/_10sdp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/white"
+                        android:fontFamily="@font/monserratregular"
+                        android:inputType="number"
                         android:paddingStart="0dp"
                         android:text="3510210102880008"
-                        android:fontFamily="@font/monserratregular"
+                        android:textColor="@color/black"
                         android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"/>
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
-                android:layout_marginRight="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
                 android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
-                    android:hint="Nama Ibu"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    android:hint="Nama Ibu">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_namaibu"
-                        android:background="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/white"
                         android:fontFamily="@font/monserratregular"
-                        android:text="Astuti"
+                        android:inputType="text"
                         android:paddingStart="0dp"
+                        android:text="Astuti"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
@@ -143,29 +149,30 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_NIKibu"
-                        android:background="@color/white"
-                        android:layout_marginStart="@dimen/_10sdp"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="3510210102880009"
-                        android:paddingStart="0dp"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/white"
                         android:fontFamily="@font/monserratregular"
+                        android:inputType="number"
+                        android:paddingStart="0dp"
+                        android:text="3510210102880009"
+                        android:textColor="@color/black"
                         android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"/>
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
-                android:layout_marginRight="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:hint="Alamat Rumah"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                android:layout_marginRight="@dimen/_15sdp"
+                android:hint="Alamat Rumah">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_alamatrumah"
@@ -178,8 +185,8 @@
                     android:paddingStart="0dp"
                     android:text="Jl Belimbing Blok D5 32 Lingk. Banjarsari"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -188,29 +195,31 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
-                android:layout_marginRight="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
                 android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
-                    android:hint="Desa / Kelurahan"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    android:hint="Desa / Kelurahan">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_desakelurahan"
-                        android:background="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/white"
                         android:fontFamily="@font/monserratregular"
-                        android:text="Banjarsari"
+                        android:inputType="text"
                         android:paddingStart="0dp"
+                        android:text="Banjarsari"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
@@ -223,42 +232,46 @@
                         android:layout_marginStart="@dimen/_10sdp"
                         android:background="@color/white"
                         android:fontFamily="@font/monserratregular"
-                        android:text="Glagah"
+                        android:inputType="text"
                         android:paddingStart="0dp"
+                        android:text="Glagah"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
-                android:layout_marginRight="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginRight="@dimen/_15sdp"
                 android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
-                    android:hint="RT"
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                    android:hint="RT">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_rt"
-                        android:background="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:background="@color/white"
                         android:fontFamily="@font/monserratregular"
-                        android:text="03"
+                        android:inputType="text"
                         android:paddingStart="0dp"
+                        android:text="03"
                         android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:textSize="@dimen/_10ssp" />
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
+
                 <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
@@ -266,16 +279,17 @@
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_rw"
-                        android:layout_marginStart="@dimen/_10sdp"
-                        android:background="@color/white"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="03"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:background="@color/white"
                         android:fontFamily="@font/monserratregular"
-                        android:textSize="@dimen/_10ssp"
+                        android:inputType="text"
                         android:paddingStart="0dp"
-                        android:textStyle="bold"
-                        android:textColor="@color/black"/>
+                        android:text="03"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_10ssp"
+                        android:textStyle="bold" />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -284,24 +298,24 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="@dimen/_20sdp"
-                android:layout_marginBottom="@dimen/_15sdp"
                 android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
                 android:fontFamily="@font/monserratbold"
-                android:text="Data Akun"
                 android:gravity="center"
+                android:text="Data Akun"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_13ssp"
                 android:textStyle="bold" />
 
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
                 android:layout_marginRight="@dimen/_15sdp"
-                android:hint="Nama Pengguna"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                android:hint="Nama Pengguna">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_namapengguna"
@@ -314,20 +328,21 @@
                     android:paddingStart="0dp"
                     android:text="Budi Doremmi"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
-                android:layout_marginRight="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                app:passwordToggleEnabled="true"
+                android:layout_marginRight="@dimen/_15sdp"
                 android:hint="Password"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_password"
@@ -340,19 +355,20 @@
                     android:paddingStart="0dp"
                     android:text="Budi Doremmi"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
+
             <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
-                android:layout_marginRight="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
-                android:hint="No Handphone"
-                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+                android:layout_marginRight="@dimen/_15sdp"
+                android:hint="No Handphone">
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_nohp"
@@ -361,12 +377,12 @@
                     android:background="@color/white"
                     android:fontFamily="@font/monserratregular"
                     android:gravity="top"
-                    android:paddingStart="0dp"
                     android:inputType="phone"
+                    android:paddingStart="0dp"
                     android:text="0821 4119 7788"
                     android:textColor="@color/black"
-                    android:textStyle="bold"
-                    android:textSize="@dimen/_10ssp" />
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
             </com.google.android.material.textfield.TextInputLayout>
@@ -379,10 +395,7 @@
                 android:fontFamily="@font/interbold"
                 android:text="Simpan"
                 android:textAllCaps="false"
-                android:textSize="@dimen/_12ssp"/>
-
-
-
+                android:textSize="@dimen/_12ssp" />
 
 
         </LinearLayout>

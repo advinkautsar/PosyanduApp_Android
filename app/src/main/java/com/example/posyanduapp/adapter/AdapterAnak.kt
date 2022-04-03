@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.posyanduapp.R
 import com.example.posyanduapp.databinding.ItemLayoutAnakBinding
 import com.example.posyanduapp.model.ListAnak
+import com.example.posyanduapp.ui.bidan.DetailAnakBidan
 import com.example.posyanduapp.ui.bidan.RiwayatRujukanPerAnakBidan
 import com.example.posyanduapp.ui.orangtua.DetailAnakActivity
 import com.example.posyanduapp.ui.orangtua.GrafikPertumbuhanActivity
@@ -75,7 +76,7 @@ class AdapterAnak (
         popupMenus.setOnMenuItemClickListener {
             when(it.itemId){
                 R.id.menu_detail->{
-                    val intent = Intent(itemView.context, DetailAnakActivity::class.java)
+                    val intent = Intent(itemView.context, DetailAnakBidan::class.java)
                     intent.putExtra("nik", nik_anak)
                     intent.putExtra("nama", nama_anak)
                     itemView.getContext().startActivity(intent);
