@@ -12,11 +12,8 @@ import com.example.posyanduapp.databinding.ItemLayoutAnakBinding
 import com.example.posyanduapp.model.ListAnak
 import com.example.posyanduapp.ui.bidan.DetailAnakBidan
 import com.example.posyanduapp.ui.bidan.RiwayatRujukanPerAnakBidan
-import com.example.posyanduapp.ui.orangtua.DetailAnakActivity
-import com.example.posyanduapp.ui.orangtua.GrafikPertumbuhanActivity
-import com.example.posyanduapp.ui.orangtua.RiwayatPemKesActivity
-import com.example.posyanduapp.ui.orangtua.RiwayatRujukAnakActivity
-import java.util.*
+import com.example.posyanduapp.ui.bidan.GrafikPertumbuhanActivity
+import com.example.posyanduapp.ui.bidan.RiwayatPemKesActivity
 import kotlin.collections.ArrayList
 
 class AdapterAnak (

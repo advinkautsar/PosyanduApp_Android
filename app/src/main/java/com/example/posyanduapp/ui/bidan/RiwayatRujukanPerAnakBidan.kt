@@ -3,6 +3,7 @@ package com.example.posyanduapp.ui.bidan
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
@@ -41,6 +42,17 @@ class RiwayatRujukanPerAnakBidan : AppCompatActivity() {
 
         binding.btnKembalirujukanak.setOnClickListener {
             startActivity(Intent(this, AnakActivity::class.java))
+        }
+
+        //swipe refresh
+        binding.swlayout.setOnRefreshListener {
+            // Handler untuk menjalankan jeda selama 5 detik
+            Handler().postDelayed({ // Berhenti berputar/refreshing
+                binding.swlayout.isRefreshing = false
+                getallRujukanID(idnya)
+                Toast.makeText(this, "Data diperbaharui", Toast.LENGTH_SHORT).show()
+            }, 3000)
+
         }
 
 

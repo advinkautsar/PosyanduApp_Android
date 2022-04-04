@@ -16,6 +16,7 @@ import retrofit2.Callback
 import retrofit2.Response
 
 class DetailAnakBidan : AppCompatActivity() {
+
     private lateinit var binding: ActivityDetailAnakBidanBinding
     var idnya: String = ""
     lateinit var DataDetailAnakBidan: GetDetailAnak.Result
@@ -26,6 +27,7 @@ class DetailAnakBidan : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityDetailAnakBidanBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         //intent
         binding.btnBackdetailanakbidan.setOnClickListener {
             startActivity(Intent(this,AnakActivity::class.java))

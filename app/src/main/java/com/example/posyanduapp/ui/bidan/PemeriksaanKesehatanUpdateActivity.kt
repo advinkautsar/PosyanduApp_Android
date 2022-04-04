@@ -1,7 +1,6 @@
 package com.example.posyanduapp.ui.bidan
 
 import android.app.DatePickerDialog
-import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.AdapterView
@@ -13,7 +12,6 @@ import com.example.posyanduapp.Helper.SharedPref
 import com.example.posyanduapp.databinding.ActivityPemeriksaanKesehatanUpdateBinding
 import com.example.posyanduapp.model.*
 import com.example.posyanduapp.retrofit.ApiService
-import com.example.posyanduapp.ui.orangtua.RiwayatPemKesActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -77,7 +75,7 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
             Log.d("enek lo","ada"+idnya)
         }
         dropdown()
-        pindah()
+//        pindah()
         getlistImunisasi()
         getlistanak()
         getbidan()
@@ -231,11 +229,11 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
 
         }
     }
-    fun pindah(){
-        binding.btnKembalipemeriksaankesehatan.setOnClickListener {
-            startActivity(Intent(this, RiwayatPemKesActivity::class.java))
-        }
-    }
+//    fun pindah(){
+//        binding.btnKembalipemeriksaankesehatan.setOnClickListener {
+//            startActivity(Intent(this, RiwayatPemKesActivity::class.java))
+//        }
+//    }
     private fun getdatapemkes_id(idnya: String) {
         Toast.makeText(this@PemeriksaanKesehatanUpdateActivity, idnya, Toast.LENGTH_LONG).show()
         ApiService.endpoint.getPemeriksaanID(idnya)

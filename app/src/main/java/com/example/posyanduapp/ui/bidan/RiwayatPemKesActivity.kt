@@ -1,4 +1,4 @@
-package com.example.posyanduapp.ui.orangtua
+package com.example.posyanduapp.ui.bidan
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -8,12 +8,10 @@ import android.util.Log
 import android.widget.Toast
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.example.posyanduapp.adapter.AdapterPemeriksaan
 import com.example.posyanduapp.databinding.ActivityRiwayatPemKesBinding
 import com.example.posyanduapp.model.ListPemeriksaan
 import com.example.posyanduapp.retrofit.ApiService
-import com.example.posyanduapp.ui.bidan.AnakActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response

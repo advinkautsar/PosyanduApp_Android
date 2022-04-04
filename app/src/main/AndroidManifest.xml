@@ -16,6 +16,9 @@
         android:theme="@style/Theme.PosyanduApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.kader.ReadProfilOrtuActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.bidan.DetailAnakBidan"
             android:exported="false" />
         <activity android:name=".ui.bidan.PemeriksaanKesehatanUpdateActivity" />
@@ -33,13 +36,13 @@
             android:name=".ui.orangtua.RiwayatRujukAnakActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.GrafikPertumbuhanActivity"
+            android:name=".ui.bidan.GrafikPertumbuhanActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.StatusGiziActivity"
+            android:name=".ui.bidan.RiwayatStatusGiziAnakctivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.RiwayatPemKesActivity"
+            android:name=".ui.bidan.RiwayatPemKesActivity"
             android:exported="false" />
         <activity
             android:name=".ui.orangtua.DetailAnakActivity"

@@ -1,10 +1,7 @@
 package com.example.posyanduapp.retrofit
 
-import com.example.posyanduapp.Model.GetDetailAnak
-import com.example.posyanduapp.Model.ListRujukanAnak
-import com.example.posyanduapp.Model.ResponRegister
+import com.example.posyanduapp.Model.*
 import com.example.posyanduapp.model.*
-import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -42,9 +39,6 @@ interface ApiEndpoint {
     fun getnotif(
         @Path("id") id:Int,
     ): Call<ListNotifikasi>
-
-
-
 
 
     //getUser
@@ -237,8 +231,25 @@ interface ApiEndpoint {
         @Path("id") id:String,
     ): Call<GetDetailAnak>
 
+    // Get Riwayat Status Gizi Anak
+    @GET("ambil_datastatusgizi_anak/{id}")
+    fun getDetailStatGizAnakID(
+        @Path("id") id:String,
+    ): Call<GetRiwayatStatusGiziAnak>
 
 
+    //Get List Profil Ortu
+    @FormUrlEncoded
+    @POST("list-ortu-cari")
+    fun getortuCARI(
+        @Field("orangtua") orangtua: String,
+    ): Call<ListProfilOrtu>
+
+    // Get Profil Ortu
+    @GET("show_dataOrtu/{id}")
+    fun getProfilOrtu(
+        @Path("id") id:String,
+    ): Call<GetDetailOrtu>
 
 
 

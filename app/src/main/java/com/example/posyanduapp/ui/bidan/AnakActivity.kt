@@ -37,6 +37,7 @@ class AnakActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityAnakBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
         rvListAnak = binding.rvAnak
         getlistanakcari()
 
