@@ -22,6 +22,10 @@ import com.example.posyanduapp.ui.bidan.RujukanUpdateActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.text.ParseException
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class AdapterPemeriksaan (
     private val context: Context,
@@ -120,6 +124,22 @@ class AdapterPemeriksaan (
         }
 
 
+    }
+
+    fun convertFormat(inputDate: String?): String? {
+        val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
+        var date: Date? = null
+        try {
+            date = simpleDateFormat.parse(inputDate)
+        } catch (e: ParseException) {
+            e.printStackTrace()
+        }
+
+        if (date == null) {
+            return ""
+        }
+        val convetDateFormat = SimpleDateFormat("dd MMM yyyy")
+        return convetDateFormat.format(date)
     }
 
 

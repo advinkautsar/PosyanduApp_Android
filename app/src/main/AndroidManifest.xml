@@ -16,6 +16,24 @@
         android:theme="@style/Theme.PosyanduApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.kader.RiwayatStatusGizAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.RiwayatRujukanAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.RiwayatPemkesKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.GrafikPertumbuhanAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.DetailAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.FiturAnakKaderActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.kader.ReadProfilOrtuActivity"
             android:exported="false" />
         <activity

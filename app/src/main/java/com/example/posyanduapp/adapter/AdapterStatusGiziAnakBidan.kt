@@ -35,7 +35,7 @@ class AdapterStatusGiziAnakBidan(
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = data[position]
-        holder.binding.statusgiziTgl.text = currentItem.created_at
+        holder.binding.statusgiziTgl.text = convertFormat(currentItem.created_at)
         holder.binding.sgiziBB.text = currentItem.berat_badan
         holder.binding.sgiziPB.text = currentItem.tinggi_badan
         holder.binding.sgiziLK.text = currentItem.lingkar_kepala
@@ -49,17 +49,18 @@ class AdapterStatusGiziAnakBidan(
     }
 
     fun convertFormat(inputDate: String?): String? {
-        val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd hh:mm:ss")
+        val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
         var date: Date? = null
         try {
             date = simpleDateFormat.parse(inputDate)
         } catch (e: ParseException) {
             e.printStackTrace()
         }
+
         if (date == null) {
             return ""
         }
-        val convetDateFormat = SimpleDateFormat("dd-MMMM-yyyy hh:mm")
+        val convetDateFormat = SimpleDateFormat("dd MMM yyyy")
         return convetDateFormat.format(date)
     }
 

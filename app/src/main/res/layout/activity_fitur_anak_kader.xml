@@ -5,8 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.bidan.AnakActivity">
-
+    tools:context=".ui.kader.FiturAnakKaderActivity">
 
     <LinearLayout
         android:id="@+id/toolbar_anak"
@@ -65,7 +64,7 @@
         android:textColorHint="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_anak"
+        android:id="@+id/rv_anakkader"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@id/search"
@@ -75,5 +74,7 @@
         android:layout_marginBottom="@dimen/_15sdp"
         tools:itemCount="17"
         tools:listitem="@layout/item_layout_anak" />
+
+
 
 </RelativeLayout>

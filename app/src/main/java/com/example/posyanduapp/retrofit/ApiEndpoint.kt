@@ -50,7 +50,6 @@ interface ApiEndpoint {
     @GET("get_user_kader/{id}")
     fun getkader(
         @Path("id") id:Int,
-
         ): Call<Kader>
 
 

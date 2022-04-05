@@ -15,6 +15,7 @@ class GrafikPertumbuhanActivity : AppCompatActivity() {
     var namanya: String = ""
 
     lateinit var binding: ActivityGrafikPertumbuhanBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityGrafikPertumbuhanBinding.inflate(layoutInflater)

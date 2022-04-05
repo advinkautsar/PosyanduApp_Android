@@ -163,7 +163,7 @@
                     android:layout_marginLeft="@dimen/_15sdp"
                     android:layout_marginRight="@dimen/_15sdp"
                     android:layout_marginBottom="@dimen/_10sdp"
-                    android:hint="Berat Anak Saat Lahir">
+                    android:hint="Berat Anak Saat Lahir ( Kg )">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_beratlahiranak"
@@ -188,7 +188,7 @@
                     android:layout_marginLeft="@dimen/_15sdp"
                     android:layout_marginRight="@dimen/_15sdp"
                     android:layout_marginBottom="@dimen/_10sdp"
-                    android:hint="Panjang Anak Saat Lahir">
+                    android:hint="Panjang Anak Saat Lahir ( cm )">
 
                     <com.google.android.material.textfield.TextInputEditText
                         android:id="@+id/edt_panjanglahiranak"

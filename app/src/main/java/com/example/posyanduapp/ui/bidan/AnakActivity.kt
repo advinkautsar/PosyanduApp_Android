@@ -43,6 +43,9 @@ class AnakActivity : AppCompatActivity() {
 
 //        postTolist()
 
+        binding.btnKembalianak.setOnClickListener {
+            startActivity(Intent(this, BerandabidanActivity::class.java))
+        }
 
         binding.search.setOnEditorActionListener { v, actionId, event ->
             if (actionId === EditorInfo.IME_ACTION_SEARCH) {
@@ -71,9 +74,6 @@ class AnakActivity : AppCompatActivity() {
             false
         }
 
-        binding.btnKembalianak.setOnClickListener {
-            startActivity(Intent(this, BerandabidanActivity::class.java))
-        }
 //
 //        binding.rvAnak.layoutManager = LinearLayoutManager(this)
 //        binding.rvAnak.adapter = RecyclerAdapterAnak(this,anaklist, ibulist, poslist)

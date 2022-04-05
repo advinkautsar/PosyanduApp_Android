@@ -6,22 +6,10 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.bidan.RiwayatPemKesActivity">
+    tools:context=".ui.kader.GrafikPertumbuhanAnakKaderActivity">
 
-
-    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/swlayout"
-        >
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <LinearLayout
-        android:id="@+id/toolbar_riwayatPemKes"
+    <LinearLayout
+        android:id="@+id/toolbar_grafiktumbuh"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_60sdp"
         android:background="@drawable/bg_kesehatananak"
@@ -29,7 +17,7 @@
         android:padding="@dimen/_15sdp">
 
         <ImageView
-            android:id="@+id/btn_kembaliriwayatPemKes"
+            android:id="@+id/btn_kembaligrafiktumbuh"
             android:layout_width="@dimen/_30sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_gravity="center"
@@ -51,11 +39,11 @@
                 android:layout_gravity="center"
                 android:layout_marginStart="@dimen/_8sdp"
                 android:fontFamily="@font/monserratbold"
-                android:text="Riwayat Pemeriksaan Kesehatan "
+                android:text="Grafik Pertumbuhan"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_13ssp" />
             <TextView
-                android:id="@+id/tv_namaAnak"
+                android:id="@+id/grafiktumbuh_namaAnak"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
@@ -72,20 +60,25 @@
 
     </LinearLayout>
 
-            <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rv_riwayatPemKes"
+    <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@id/toolbar_riwayatPemKes"
-        android:layout_marginStart="@dimen/_15sdp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="@dimen/_15sdp"
-        android:layout_marginBottom="@dimen/_15sdp"
-        tools:itemCount="17"
-        tools:listitem="@layout/item_layout_riwayatpemkes"/>
+        android:layout_height="wrap_content"
+        android:id="@+id/grafiktumbuh_tablayout"/>
 
-        </LinearLayout>
+    <androidx.viewpager2.widget.ViewPager2
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_400sdp"
+        android:id="@+id/grafiktumbuh_viewpager2"/>
 
-    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+    <Button
+        android:id="@+id/btn_statusgiziKader"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_margin="@dimen/_15sdp"
+        android:fontFamily="@font/interbold"
+        android:text="Status Gizi Anak"
+        android:textAllCaps="false"
+        android:textSize="@dimen/_12ssp"/>
 
 </LinearLayout>

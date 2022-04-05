@@ -1,4 +1,4 @@
-package com.example.posyanduapp.adapter.adapterOrtu
+package com.example.posyanduapp.adapter.adapterKader
 
 import android.content.Context
 import android.content.Intent
@@ -6,12 +6,8 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.posyanduapp.Model.ListProfilOrtu
-import com.example.posyanduapp.adapter.AdapterAnak
-import com.example.posyanduapp.databinding.ItemLayoutAnakBinding
 import com.example.posyanduapp.databinding.ItemLayoutOrangtuaBinding
-import com.example.posyanduapp.model.ListAnak
 import com.example.posyanduapp.ui.kader.ReadProfilOrtuActivity
-import com.example.posyanduapp.ui.orangtua.ProfilOrtuActivity
 
 class AdapterListOrtu(
     private val context: Context,
