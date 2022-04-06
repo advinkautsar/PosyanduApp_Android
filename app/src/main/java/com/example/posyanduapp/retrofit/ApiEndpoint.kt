@@ -52,6 +52,11 @@ interface ApiEndpoint {
         @Path("id") id:Int,
         ): Call<Kader>
 
+    @GET("get_user_ortu/{id}")
+    fun getortu(
+        @Path("id") id:Int,
+    ): Call<Orangtua>
+
 
 
 
@@ -250,7 +255,28 @@ interface ApiEndpoint {
         @Path("id") id:String,
     ): Call<GetDetailOrtu>
 
+    //Get Anak Dari Ortu
+    @GET("ambil_data_anakortu/{id}")
+    fun getdataAnakOrtu(
+        @Path("id") id: Int,
+    ): Call<ListAnakOrtu>
 
+    //Get Profil Ortu ( Orangtua )
+    @GET("get_profil_ortu/{id}")
+    fun getProfilOrtu(
+        @Path("id") id: Int,
+    ): Call<GetProfilOrtu>
 
+    //Get Kecamatan
+    @GET("get_kecamatan")
+    fun getKecamatan(
+        @Path("id") id: Int,
+    ): Call<ListKecamatan>
+
+    //Get Kelurahan/Desa
+    @GET("get_kelurahan_desa/{id}")
+    fun getKelurahan_Desa(
+        @Path("id") id: Int,
+    ): Call<ListKelurahanDesa>
 
 }

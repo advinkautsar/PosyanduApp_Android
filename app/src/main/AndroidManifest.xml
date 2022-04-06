@@ -16,6 +16,15 @@
         android:theme="@style/Theme.PosyanduApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".ui.orangtua.RiwayatStatusGiziAnakOrtuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.RiwayatPemkesAnakOrtuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.FiturAnakOrtuActivity"
+            android:exported="false" />
+        <activity
             android:name=".ui.kader.RiwayatStatusGizAnakKaderActivity"
             android:exported="false" />
         <activity
@@ -26,6 +35,9 @@
             android:exported="false" />
         <activity
             android:name=".ui.kader.GrafikPertumbuhanAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.GrafikPertumbuhanAnakOrtuActivity"
             android:exported="false" />
         <activity
             android:name=".ui.kader.DetailAnakKaderActivity"
@@ -51,7 +63,7 @@
             android:name=".ui.orangtua.NotifikasiActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.RiwayatRujukAnakActivity"
+            android:name=".ui.orangtua.RiwayatRujukAnakOrangtuaActivity"
             android:exported="false" />
         <activity
             android:name=".ui.bidan.GrafikPertumbuhanActivity"
@@ -63,7 +75,7 @@
             android:name=".ui.bidan.RiwayatPemKesActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.DetailAnakActivity"
+            android:name=".ui.orangtua.DetailAnakOrtuActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity

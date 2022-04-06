@@ -200,44 +200,40 @@
                 android:orientation="horizontal">
 
                 <com.google.android.material.textfield.TextInputLayout
-                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
-                    android:hint="Desa / Kelurahan">
+                    app:boxBackgroundColor="@color/white"
+                    >
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/edt_desakelurahan"
+                    <AutoCompleteTextView
+                        android:id="@+id/edt_desa_kelurahan"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@color/white"
+                        android:layout_height="match_parent"
                         android:fontFamily="@font/monserratregular"
-                        android:inputType="text"
                         android:paddingStart="0dp"
-                        android:text="Banjarsari"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:hint="Desa / Kelurahan"
+                        android:inputType="none"
+                        android:textSize="@dimen/_10ssp"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
-                    android:hint="Kecamatan">
+                    android:hint="Kecamatan"
+                    app:boxBackgroundColor="@color/white">
 
-                    <com.google.android.material.textfield.TextInputEditText
-                        android:id="@+id/edt_kecamtan"
+                    <AutoCompleteTextView
+                        android:id="@+id/edt_kecamatan"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="match_parent"
                         android:layout_marginStart="@dimen/_10sdp"
-                        android:background="@color/white"
                         android:fontFamily="@font/monserratregular"
-                        android:inputType="text"
                         android:paddingStart="0dp"
-                        android:text="Glagah"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_10ssp"
-                        android:textStyle="bold" />
+                        android:inputType="none"
+                        android:textSize="@dimen/_10ssp"/>
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -353,7 +349,6 @@
                     android:gravity="top"
                     android:inputType="textPassword"
                     android:paddingStart="0dp"
-                    android:text="Budi Doremmi"
                     android:textColor="@color/black"
                     android:textSize="@dimen/_10ssp"
                     android:textStyle="bold" />

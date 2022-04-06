@@ -6,20 +6,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.orangtua.RiwayatRujukAnakOrangtuaActivity">
+    tools:context=".ui.orangtua.RiwayatPemkesAnakOrtuActivity">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:id="@+id/swlayout">
+        android:id="@+id/swlayout"
+        >
 
         <LinearLayout
+            android:orientation="vertical"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
+            android:layout_height="match_parent">
 
             <LinearLayout
-                android:id="@+id/toolbar_rujukanak"
+                android:id="@+id/toolbar_riwayatPemKes"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_60sdp"
                 android:background="@drawable/bg_kesehatananak"
@@ -27,7 +28,7 @@
                 android:padding="@dimen/_15sdp">
 
                 <ImageView
-                    android:id="@+id/btn_kembalirujukanak"
+                    android:id="@+id/btn_kembaliriwayatPemKes"
                     android:layout_width="@dimen/_30sdp"
                     android:layout_height="@dimen/_30sdp"
                     android:layout_gravity="center"
@@ -49,17 +50,17 @@
                         android:layout_gravity="center"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:fontFamily="@font/monserratbold"
-                        android:text="Riwayat Rujukan Anak"
+                        android:text="Riwayat Pemeriksaan Kesehatan "
                         android:textColor="@color/white"
                         android:textSize="@dimen/_13ssp" />
                     <TextView
-                        android:id="@+id/rujukanak_NamaAnak"
+                        android:id="@+id/tv_namaAnak"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginStart="@dimen/_8sdp"
                         android:fontFamily="@font/monserratbold"
-                        android:text="Diki firmansyah "
+                        android:text="Budi Doremi "
                         android:textColor="@color/white"
                         android:textSize="@dimen/_10ssp" />
 
@@ -68,27 +69,23 @@
 
 
 
-
             </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/rv_riwayatrujukananakOrtu"
+                android:id="@+id/rv_riwayatPemKesOrtu"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_below="@id/toolbar_rujukan"
+                android:layout_below="@id/toolbar_riwayatPemKes"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:layout_marginTop="18dp"
                 android:layout_marginEnd="@dimen/_15sdp"
                 android:layout_marginBottom="@dimen/_15sdp"
                 tools:itemCount="17"
-                tools:listitem="@layout/item_layout_rujukan"/>
+                tools:listitem="@layout/item_layout_riwayatpemkes"/>
 
         </LinearLayout>
 
-
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
-
-
 
 
 </LinearLayout>

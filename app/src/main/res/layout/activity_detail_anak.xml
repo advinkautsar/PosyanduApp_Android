@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.orangtua.DetailAnakActivity">
+    tools:context=".ui.orangtua.DetailAnakOrtuActivity">
 
     <LinearLayout
         android:id="@+id/toolbar_detailanak"
@@ -38,598 +38,204 @@
 
     </LinearLayout>
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/_15sdp">
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_margin="@dimen/_15sdp"
                 android:fontFamily="@font/monserratbold"
+                android:gravity="center"
                 android:text="Data Diri Anak"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_12ssp"
+                android:textSize="@dimen/_13ssp"
                 android:textStyle="bold" />
 
-            <androidx.cardview.widget.CardView
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_15sdp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?selectableItemBackground"
-                app:cardCornerRadius="@dimen/_10sdp">
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Nomor Kartu Anak">
 
-                <LinearLayout
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_nomorkartuanak"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:id="@+id/tv_nomorkartuanak"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/monserratbold"
-                        android:gravity="center"
-                        android:text="A01"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12ssp" />
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:fontFamily="@font/monserratbold"
-                        android:gravity="center"
-                        android:text="Nomor Kartu Anak"
-                        android:textColor="@color/black"
-                        android:textSize="@dimen/_12ssp" />
+                    android:background="@color/white"
+                    android:fontFamily="@font/monserratregular"
+                    android:gravity="top"
+                    android:inputType="none"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_namaanak"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Nama Anak :"
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/det_namanak"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Rozikin"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_jeniskelamin"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Jenis Kelamin :"
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/det_jkanak"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Laki - Laki"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_tgllahir"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Tanggal Lahir :"
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/det_tgllahir"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="01-02-2020"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_beratlahir"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Berat Lahir :"
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/det_beratlahir"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="2,8 Kg"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_panjanglahir"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Panjang Lahir :"
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/det_panjanglahir"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="50cm"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:layout_marginBottom="@dimen/_10sdp">
-
-                        <TextView
-                            android:id="@+id/text_namaibu"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Nama Ibu :"
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/det_namaibu"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Ibu Deni"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_15sdp"
-                android:fontFamily="@font/monserratbold"
-                android:text="Riwayat Imunisasi"
-                android:textColor="@color/black"
-                android:textSize="@dimen/_12ssp"
-                android:textStyle="bold" />
-
-            <androidx.cardview.widget.CardView
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_5sdp"
                 android:layout_marginRight="@dimen/_15sdp"
-                android:clickable="true"
-                android:focusable="true"
-                android:foreground="?selectableItemBackground"
-                app:cardCornerRadius="@dimen/_10sdp">
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Nomor Lengkap Anak">
 
-                <LinearLayout
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_namaanak"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin1"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="HB-0 ( 0-7 Hari )"
-                            android:textSize="@dimen/_10ssp" />
+                    android:background="@color/white"
+                    android:fontFamily="@font/monserratregular"
+                    android:gravity="top"
+                    android:inputType="none"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
-                        <TextView
-                            android:id="@+id/detanak_vaksin1"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="21-02-2022"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-                    </RelativeLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Jenis Kelamin Anak">
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="BCG ( 0-1 Bulan )"
-                            android:textSize="@dimen/_10ssp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_jeniskelaminanak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/monserratregular"
+                    android:gravity="top"
+                    android:inputType="none"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
-                        <TextView
-                            android:id="@+id/detanak_vaksin2"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="21-03-2022"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Tanggal Lahir Anak">
 
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Polio Tetes 1 ( 0-1 Bulan )"
-                            android:textSize="@dimen/_10ssp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_tanggallahiranak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/monserratregular"
+                    android:gravity="top"
+                    android:inputType="none"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
-                        <TextView
-                            android:id="@+id/detanak_vaksin3"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="21-04-2022"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Berat Anak Saat Lahir ( Kg )">
 
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="DPT-HB-Hib 1 ( Usia 2 Bulan )"
-                            android:textSize="@dimen/_10ssp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_beratlahiranak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/monserratregular"
+                    android:gravity="top"
+                    android:inputType="none"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
-                        <TextView
-                            android:id="@+id/detanak_vaksin4"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="21-05-2022"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-                    </RelativeLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_10sdp"
+                android:hint="Panjang Anak Saat Lahir ( cm )">
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Polio Tetes 2 ( Usia 2 Bulan ) "
-                            android:textSize="@dimen/_10ssp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_panjanglahiranak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/monserratregular"
+                    android:gravity="top"
+                    android:inputType="none"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
-                        <TextView
-                            android:id="@+id/detanak_vaksin5"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Belum"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
-                    </RelativeLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                android:hint="Nama Wali Anak ( Ibu )">
 
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="DPT-HB-Hib 2  ( Usia 3 Bulan ) "
-                            android:textSize="@dimen/_10ssp" />
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edt_namaibuanak"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:fontFamily="@font/monserratregular"
+                    android:gravity="top"
+                    android:inputType="none"
+                    android:paddingStart="0dp"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
 
 
-                        <TextView
-                            android:id="@+id/detanak_vaksin6"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Belum"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Polio Tetes 3 ( Usia 3 Bulan ) "
-                            android:textSize="@dimen/_10ssp" />
+            </com.google.android.material.textfield.TextInputLayout>
 
 
-                        <TextView
-                            android:id="@+id/detanak_vaksin7"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Belum"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin8"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="DPT-HB-Hib 3 ( Usia 4 Bulan ) "
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/detanak_vaksin8"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Belum"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin9"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Polio Tetes 4 ( Usia 4 Bulan ) "
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/detanak_vaksin9"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Belum"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin10"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="IPV ( Usia 4 Bulan ) "
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/detanak_vaksin10"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Belum"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin11"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Campak ( Usia 9 Bulan ) "
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/detanak_vaksin11"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Belum"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-
-                    <RelativeLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="@dimen/_5sdp"
-                        android:layout_marginBottom="@dimen/_5sdp">
-
-                        <TextView
-                            android:id="@+id/text_vaksin12"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_alignParentStart="true"
-                            android:layout_marginStart="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="DPT-HB-Hib Lanjutan ( Usia 18 Bulan ) "
-                            android:textSize="@dimen/_10ssp" />
-
-
-                        <TextView
-                            android:id="@+id/detanak_vaksin12"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginEnd="@dimen/_10sdp"
-                            android:fontFamily="@font/monserratregular"
-                            android:text="Belum"
-                            android:textAlignment="textEnd"
-                            android:textSize="@dimen/_10ssp" />
-
-                    </RelativeLayout>
-
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
 
         </LinearLayout>
+
+    </ScrollView>
+
 
 
 </LinearLayout>

@@ -57,7 +57,7 @@ class BerandaOrtuActivity : AppCompatActivity() {
             startActivity(Intent(this, ProfilOrtuActivity::class.java))
         }
         binding.imgAnak.setOnClickListener {
-            startActivity(Intent(this, AnakActivity::class.java))
+            startActivity(Intent(this, FiturAnakOrtuActivity::class.java))
         }
         binding.imgNotifikasi.setOnClickListener {
             startActivity(Intent(this, NotifikasiActivity::class.java))

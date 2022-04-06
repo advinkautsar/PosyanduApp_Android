@@ -1,20 +1,19 @@
-package com.example.posyanduapp.ui.kader
+package com.example.posyanduapp.ui.orangtua
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.TableLayout
 import androidx.viewpager2.widget.ViewPager2
 import com.example.posyanduapp.R
-import com.example.posyanduapp.databinding.ActivityGrafikPertumbuhanAnakKaderBinding
+import com.example.posyanduapp.databinding.ActivityGrafikPertumbuhanAnakOrtuBinding
 import com.example.posyanduapp.ui.bidan.FragmentAdapter
-import com.example.posyanduapp.ui.bidan.RiwayatStatusGiziAnakctivity
+import com.example.posyanduapp.ui.kader.RiwayatStatusGizAnakKaderActivity
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 
-class GrafikPertumbuhanAnakKaderActivity : AppCompatActivity() {
+class GrafikPertumbuhanAnakOrtuActivity : AppCompatActivity() {
 
-    lateinit var binding: ActivityGrafikPertumbuhanAnakKaderBinding
+    lateinit var binding: ActivityGrafikPertumbuhanAnakOrtuBinding
     var idnya: String = ""
     var namanya: String = ""
     lateinit var tablayout1 : TabLayout
@@ -22,7 +21,7 @@ class GrafikPertumbuhanAnakKaderActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityGrafikPertumbuhanAnakKaderBinding.inflate(layoutInflater)
+        binding = ActivityGrafikPertumbuhanAnakOrtuBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         idnya = intent.getStringExtra("nik").toString()
@@ -34,11 +33,10 @@ class GrafikPertumbuhanAnakKaderActivity : AppCompatActivity() {
 
         //intent
         binding.btnKembaligrafiktumbuh.setOnClickListener {
-            startActivity(Intent(this,FiturAnakKaderActivity::class.java))
+            startActivity(Intent(this,FiturAnakOrtuActivity::class.java))
         }
-
         binding.btnStatusgiziKader.setOnClickListener {
-            intent = Intent(this, RiwayatStatusGizAnakKaderActivity::class.java)
+            intent = Intent(this, RiwayatStatusGiziAnakOrtuActivity::class.java)
             intent.putExtra("nik_anak", idnya)
             intent.putExtra("nama_anak", namanya)
             startActivity(intent)

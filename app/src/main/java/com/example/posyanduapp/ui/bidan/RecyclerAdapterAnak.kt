@@ -32,7 +32,7 @@ RecyclerView.Adapter<RecyclerAdapterAnak.ViewHolder>(){
             popupMenus.setOnMenuItemClickListener {
                 when(it.itemId){
                     R.id.menu_detail->{
-                        val intent = Intent(itemView.context, DetailAnakActivity::class.java)
+                        val intent = Intent(itemView.context, DetailAnakOrtuActivity::class.java)
                         itemView.getContext().startActivity(intent);
                         true
                     }
@@ -47,7 +47,7 @@ RecyclerView.Adapter<RecyclerAdapterAnak.ViewHolder>(){
                         true
                     }
                     R.id.menu_rujukan->{
-                        val intent = Intent(itemView.context, RiwayatRujukAnakActivity::class.java)
+                        val intent = Intent(itemView.context, RiwayatRujukAnakOrangtuaActivity::class.java)
                         itemView.getContext().startActivity(intent);
                         true
                     }
