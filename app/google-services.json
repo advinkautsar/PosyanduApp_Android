@@ -14,6 +14,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "561165719471-3vptv2rg67l96m15uathvoauc1piqtut.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.posyanduapp",
+            "certificate_hash": "eb28c4f3d104760a4632bd6c5b49209d9f12bec7"
+          }
+        },
+        {
           "client_id": "561165719471-dr9iu5iguokp65vvslve6p6092vcvc2g.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

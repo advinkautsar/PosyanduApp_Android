@@ -22,6 +22,10 @@ import com.example.posyanduapp.ui.bidan.RujukanUpdateActivity
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
+import java.text.ParseException
+import java.text.SimpleDateFormat
+import java.util.*
+import kotlin.collections.ArrayList
 
 class AdapterPemeriksaan (
     private val context: Context,
@@ -49,7 +53,7 @@ class AdapterPemeriksaan (
         // set current item of result response tarif data
         val currentItem = data[position]
         // set value to the holder view
-        holder.binding.riwayatpemkesTgl.text = currentItem.updatedAt
+        holder.binding.riwayatpemkesTgl.text = currentItem.tanggal_pemeriksaan
         holder.binding.riwpemkesAsi.text = currentItem.asi_ekslusif
         holder.binding.riwpemkesFe1.text = currentItem.Fe_1
         holder.binding.riwpemkesFe2.text = currentItem.Fe_2
@@ -120,6 +124,22 @@ class AdapterPemeriksaan (
         }
 
 
+    }
+
+    fun convertFormat(inputDate: String?): String? {
+        val simpleDateFormat = SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS")
+        var date: Date? = null
+        try {
+            date = simpleDateFormat.parse(inputDate)
+        } catch (e: ParseException) {
+            e.printStackTrace()
+        }
+
+        if (date == null) {
+            return ""
+        }
+        val convetDateFormat = SimpleDateFormat("dd MMM yyyy")
+        return convetDateFormat.format(date)
     }
 
 

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ui.orangtua.RiwayatPemKesActivity">
+    tools:context=".ui.bidan.RiwayatPemKesActivity">
 
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
@@ -20,7 +20,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent">
 
-    <LinearLayout
+            <LinearLayout
         android:id="@+id/toolbar_riwayatPemKes"
         android:layout_width="match_parent"
         android:layout_height="@dimen/_60sdp"
@@ -72,7 +72,7 @@
 
     </LinearLayout>
 
-    <androidx.recyclerview.widget.RecyclerView
+            <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_riwayatPemKes"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -85,6 +85,7 @@
         tools:listitem="@layout/item_layout_riwayatpemkes"/>
 
         </LinearLayout>
+
     </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
 </LinearLayout>

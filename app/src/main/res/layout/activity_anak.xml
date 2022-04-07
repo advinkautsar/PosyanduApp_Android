@@ -40,24 +40,29 @@
 
 
     </LinearLayout>
-    <AutoCompleteTextView
 
+    <AutoCompleteTextView
         android:id="@+id/search"
-        android:drawableStart="@drawable/ic_baseline_search_24"
-        android:drawableLeft="@drawable/ic_baseline_search_24"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/purple_500"
         android:layout_below="@id/toolbar_anak"
-        android:hint="Cari anak"
-        android:textColorHint="@color/white"
-        android:layout_margin="10dp"
+        android:layout_marginStart="@dimen/_15sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/bg_search"
+        android:drawableStart="@drawable/ic_baseline_search_24"
+        android:drawableLeft="@drawable/ic_baseline_search_24"
         android:drawablePadding="10dp"
         android:ems="10"
+        android:hint="Cari anak"
         android:imeOptions="actionSearch"
         android:inputType="text"
         android:maxLines="1"
-        />
+        android:padding="@dimen/_3sdp"
+        android:paddingStart="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_anak"
@@ -70,4 +75,5 @@
         android:layout_marginBottom="@dimen/_15sdp"
         tools:itemCount="17"
         tools:listitem="@layout/item_layout_anak" />
+
 </RelativeLayout>

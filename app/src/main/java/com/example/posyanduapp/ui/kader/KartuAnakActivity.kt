@@ -21,10 +21,12 @@ import java.math.BigInteger
 import java.util.ArrayList
 
 class KartuAnakActivity : AppCompatActivity() {
+
     lateinit var pDialog: SweetAlertDialog
     var listAnak: ArrayList<ListAnak.Result> = ArrayList()
     lateinit var nik_anak: BigInteger
     private lateinit var binding : ActivityKartuAnakBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityKartuAnakBinding.inflate(layoutInflater)

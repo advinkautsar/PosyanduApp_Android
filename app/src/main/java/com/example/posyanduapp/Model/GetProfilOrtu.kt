@@ -1,0 +1,29 @@
+package com.example.posyanduapp.Model
+
+class GetProfilOrtu(
+    val data: Result?,
+    val status: String,
+    val sukses :Boolean,
+    val message: String,
+) {
+
+    data class Result(
+        val id: String?,
+        val user_id: String?,
+        val posyandu_id: String?,
+        val desa_kelurahan_id: Int?,
+        val kecamatan_id: Int?,
+        val nik_ayah: String?,
+        val nama_ayah: String?,
+        val nik_ibu: String?,
+        val nama_ibu: String?,
+        val alamat: String?,
+        val rt: String?,
+        val rw: String?,
+        val nama_pengguna: String?,
+        val nama_kecamatan: String?,
+        val nama: String?,
+        val no_hp: String?,
+
+        )
+}

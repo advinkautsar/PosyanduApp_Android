@@ -16,7 +16,7 @@ class KesehatananakActivity : AppCompatActivity() {
         val btn_kelolapemeriksaan = findViewById(R.id.img_kelolapemeriksaan) as ImageView
 
         btn_kelolapemeriksaan.setOnClickListener {
-            startActivity(Intent(this, PemeriksaankesehatanActivity::class.java))
+            startActivity(Intent(this, PemeriksaankesehatanCreateActivity::class.java))
         }
 
         btn_kelolajadwalimunisasi.setOnClickListener {

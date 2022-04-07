@@ -7,7 +7,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 
 object ApiService {
 
-    val BASE_URL: String = "https://6d69-125-167-37-190.ngrok.io/api/"
+    val BASE_URL: String = "http://192.168.100.9/TA_Posyandu2021/api/"
 //    val BASE_URLs: String = "http://192.168.1.4/PosyanduApp_Websites/api/"
 
     val interceptor: HttpLoggingInterceptor = HttpLoggingInterceptor().apply {

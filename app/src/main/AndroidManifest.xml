@@ -15,7 +15,43 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PosyanduApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.bidan.PemeriksaanKesehatanUpdateActivity"></activity>
+        <activity
+            android:name=".ui.orangtua.RiwayatStatusGiziAnakOrtuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.RiwayatPemkesAnakOrtuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.FiturAnakOrtuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.RiwayatStatusGizAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.RiwayatRujukanAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.RiwayatPemkesKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.GrafikPertumbuhanAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.orangtua.GrafikPertumbuhanAnakOrtuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.DetailAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.FiturAnakKaderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.kader.ReadProfilOrtuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bidan.DetailAnakBidan"
+            android:exported="false" />
+        <activity android:name=".ui.bidan.PemeriksaanKesehatanUpdateActivity" />
         <activity android:name=".ui.bidan.RujukanUpdateActivity" />
         <activity
             android:name=".ui.orangtua.KontenTipKesActivity"
@@ -27,19 +63,19 @@
             android:name=".ui.orangtua.NotifikasiActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.RiwayatRujukAnakActivity"
+            android:name=".ui.orangtua.RiwayatRujukAnakOrangtuaActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.GrafikPertumbuhanActivity"
+            android:name=".ui.bidan.GrafikPertumbuhanActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.StatusGiziActivity"
+            android:name=".ui.bidan.RiwayatStatusGiziAnakctivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.RiwayatPemKesActivity"
+            android:name=".ui.bidan.RiwayatPemKesActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.orangtua.DetailAnakActivity"
+            android:name=".ui.orangtua.DetailAnakOrtuActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
@@ -80,14 +116,17 @@
             android:name=".ui.bidan.RiwayatrujukanActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.bidan.PemeriksaankesehatanActivity"
+            android:name=".ui.bidan.RiwayatRujukanPerAnakBidan"
+            android:exported="false" />
+        <activity
+            android:name=".ui.bidan.PemeriksaankesehatanCreateActivity"
             android:exported="false"
             android:screenOrientation="portrait" />
         <activity
             android:name=".ui.bidan.KelolajadwalimunisasiActivity"
             android:exported="false" />
         <activity
-            android:name=".ui.bidan.RujukanActivity"
+            android:name=".ui.bidan.RujukanCreateActivity"
             android:exported="false" />
         <activity
             android:name=".ui.bidan.KesehatananakActivity"

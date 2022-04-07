@@ -1,9 +1,11 @@
 package com.example.posyanduapp.ui.orangtua
 
+import android.content.DialogInterface
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
+import androidx.appcompat.app.AlertDialog
 import com.example.posyanduapp.Helper.SharedPref
 import com.example.posyanduapp.R
 import com.example.posyanduapp.databinding.ActivityBerandaOrtuBinding
@@ -32,15 +34,30 @@ class BerandaOrtuActivity : AppCompatActivity() {
 
 
         binding.imgortuKeluar.setOnClickListener {
+            val alertDialog : AlertDialog = AlertDialog.Builder(this).create()
+            alertDialog.setTitle("Logout Akun")
+            alertDialog.setMessage("Apakah anda yakin ingin keluar aplikasi ?")
 
-            val user = s.getUser()!!
-            getdelete(user.id)
+            alertDialog.setButton(AlertDialog.BUTTON_POSITIVE,"Ya"){
+                    dialog: DialogInterface?,
+                    which: Int -> val user = s.getUser()!!
+                getdelete(user.id)
+                dialog?.dismiss()
+            }
+
+            alertDialog.setButton(AlertDialog.BUTTON_NEGATIVE,"Tidak"){
+                    dialog: DialogInterface?,
+                    which: Int -> dialog?.dismiss()
+            }
+            alertDialog.show()
+//            val user = s.getUser()!!
+//            getdelete(user.id)
         }
         binding.imgProfilortu.setOnClickListener {
             startActivity(Intent(this, ProfilOrtuActivity::class.java))
         }
         binding.imgAnak.setOnClickListener {
-            startActivity(Intent(this, AnakActivity::class.java))
+            startActivity(Intent(this, FiturAnakOrtuActivity::class.java))
         }
         binding.imgNotifikasi.setOnClickListener {
             startActivity(Intent(this, NotifikasiActivity::class.java))

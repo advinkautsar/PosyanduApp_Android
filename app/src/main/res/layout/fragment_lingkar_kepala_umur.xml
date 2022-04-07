@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.orangtua.GrafikFragments.LingkarKepalaUmurFragment">
+    tools:context=".ui.bidan.GrafikFragments.LingkarKepalaUmurFragment">
 
     <com.github.mikephil.charting.charts.LineChart
         android:id="@+id/line_chart_lku"

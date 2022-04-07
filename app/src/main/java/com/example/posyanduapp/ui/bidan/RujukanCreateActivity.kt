@@ -20,7 +20,7 @@ import retrofit2.Response
 import java.math.BigInteger
 import java.util.*
 
-class RujukanActivity : AppCompatActivity() {
+class RujukanCreateActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityRujukanBinding
     lateinit var nik_anak: BigInteger
@@ -97,6 +97,8 @@ class RujukanActivity : AppCompatActivity() {
             )
             datePickerDialog.show()
         }
+
+
         binding.btnSimpanrujukan.setOnClickListener{
 
             try {
@@ -275,17 +277,17 @@ class RujukanActivity : AppCompatActivity() {
                 val pesanan = response.body()?.pesan
 
                 if (status!!) {
-                    Toast.makeText(this@RujukanActivity, pesanan, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@RujukanCreateActivity, pesanan, Toast.LENGTH_LONG).show()
 //                    this@KelolajadwalimunisasiActivity.fragmentManager?.popBackStack()
                     finish()
                 } else {
-                    Toast.makeText(this@RujukanActivity, pesanan, Toast.LENGTH_LONG).show()
+                    Toast.makeText(this@RujukanCreateActivity, pesanan, Toast.LENGTH_LONG).show()
                 }
             }
 
             override fun onFailure(call: Call<ResponsePesan>, t: Throwable) {
                 t.printStackTrace()
-                Toast.makeText(this@RujukanActivity, "Kesalahan tidak terduga!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@RujukanCreateActivity, "Kesalahan tidak terduga!", Toast.LENGTH_LONG).show()
 
             }
 

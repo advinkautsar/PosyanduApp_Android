@@ -17,7 +17,6 @@ class GetPemeriksaanTunggal (
         val imunisasi_id_1:Int?,
         val imunisasi_id_2:Int?,
         val imunisasi_id_3: Int?,
-
         val vitA_merah: String?,
         val vitA_biru: String?,
         val Fe_1: String?,
@@ -32,7 +31,7 @@ class GetPemeriksaanTunggal (
         val id_posyandu: Int?,
         val nama: String?,
         val nama_anak: String?,
-        val tanggal_rujukan: String?,
+        val tanggal_pemeriksaan: String?,
         val updatedAt: String?,
 
     )

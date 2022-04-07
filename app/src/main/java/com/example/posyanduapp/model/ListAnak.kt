@@ -7,7 +7,7 @@ class ListAnak (
     val status: String,
     val sukses :Boolean,
     val message: String,
-        ){
+){
 
     data class Result(
         val nama_anak: String?,

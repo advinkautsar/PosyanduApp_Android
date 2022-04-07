@@ -25,8 +25,8 @@ object ApiConfig {
             .build()
 
         val retrofit = Retrofit.Builder()
-//            .baseUrl("http://192.168.1.4/PosyanduApp_Website/api/")
-            .baseUrl("https://6d69-125-167-37-190.ngrok.io/api/")
+            .baseUrl("http://192.168.100.9/TA_Posyandu2021/api/")
+//            .baseUrl("https://9b1e-36-81-120-209.ngrok.io/api/")
             .client(client)
             .addConverterFactory(GsonConverterFactory.create(gson))
             .build()

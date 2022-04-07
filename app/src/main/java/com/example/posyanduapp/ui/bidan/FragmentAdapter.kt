@@ -1,14 +1,15 @@
-package com.example.posyanduapp.ui.orangtua
+package com.example.posyanduapp.ui.bidan
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.posyanduapp.ui.orangtua.GrafikFragments.BeratBadanUmurFragment
-import com.example.posyanduapp.ui.orangtua.GrafikFragments.LingkarKepalaUmurFragment
-import com.example.posyanduapp.ui.orangtua.GrafikFragments.TinggiBadanUmurFragment
+import com.example.posyanduapp.ui.bidan.GrafikFragments.BeratBadanUmurFragment
+import com.example.posyanduapp.ui.bidan.GrafikFragments.LingkarKepalaUmurFragment
+import com.example.posyanduapp.ui.bidan.GrafikFragments.TinggiBadanUmurFragment
 
-class FragmentAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle) : FragmentStateAdapter(fragmentManager, lifecycle) {
+class FragmentAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle)
+    : FragmentStateAdapter(fragmentManager, lifecycle) {
     override fun getItemCount(): Int {
         return 3
     }

@@ -1,8 +1,7 @@
 package com.example.posyanduapp.retrofit
 
-import com.example.posyanduapp.Model.ResponRegister
+import com.example.posyanduapp.Model.*
 import com.example.posyanduapp.model.*
-import okhttp3.RequestBody
 import retrofit2.Call
 import retrofit2.http.*
 
@@ -42,9 +41,6 @@ interface ApiEndpoint {
     ): Call<ListNotifikasi>
 
 
-
-
-
     //getUser
     @GET("get_user_bidan/{id}")
     fun getbidan(
@@ -54,8 +50,12 @@ interface ApiEndpoint {
     @GET("get_user_kader/{id}")
     fun getkader(
         @Path("id") id:Int,
-
         ): Call<Kader>
+
+    @GET("get_user_ortu/{id}")
+    fun getortu(
+        @Path("id") id:Int,
+    ): Call<Orangtua>
 
 
 
@@ -71,12 +71,15 @@ interface ApiEndpoint {
     fun getRujukan(
     ): Call<ListRujukan>
 
+    @GET("ambil_datarujukan/{id}")
+    fun getallRujukanID(
+        @Path("id") id:String,
+    ): Call<ListRujukanAnak>
+
     @GET("show_datarujukan/{id}")
     fun getRujukanID(
         @Path("id") id:Int,
     ): Call<GetRujukan>
-
-
 
     @FormUrlEncoded
     @POST("tambah_datarujukan")
@@ -122,6 +125,8 @@ interface ApiEndpoint {
         @Field("asi_ekslusif") asi_ekslusif: String,
         @Field("oralit")oralit : String,
         @Field("obat_cacing")obat_cacing : String,
+        @Field("tanggal_pemeriksaan")tanggal_pemeriksaan : String,
+
         ): Call<ResponsePesan>
 
     @FormUrlEncoded
@@ -141,6 +146,8 @@ interface ApiEndpoint {
         @Field("asi_ekslusif") asi_ekslusif: String,
         @Field("oralit")oralit : String,
         @Field("obat_cacing")obat_cacing : String,
+        @Field("tanggal_pemeriksaan")tanggal_pemeriksaan : String,
+
         ): Call<ResponsePesan>
 
 
@@ -222,8 +229,72 @@ interface ApiEndpoint {
     ): Call<ResponsePesan>
 
 
+    // Get Detail Anak
+    @GET("ambil_data_anak/{id}")
+    fun getDetailAnakID(
+        @Path("id") id:String,
+    ): Call<GetDetailAnak>
+
+    // Get Riwayat Status Gizi Anak
+    @GET("ambil_datastatusgizi_anak/{id}")
+    fun getDetailStatGizAnakID(
+        @Path("id") id:String,
+    ): Call<GetRiwayatStatusGiziAnak>
 
 
+    //Get List Profil Ortu
+    @FormUrlEncoded
+    @POST("list-ortu-cari")
+    fun getortuCARI(
+        @Field("orangtua") orangtua: String,
+    ): Call<ListProfilOrtu>
 
+    // Get Profil Ortu
+    @GET("show_dataOrtu/{id}")
+    fun getProfilOrtu(
+        @Path("id") id:String,
+    ): Call<GetDetailOrtu>
 
+    //Get Anak Dari Ortu
+    @GET("ambil_data_anakortu/{id}")
+    fun getdataAnakOrtu(
+        @Path("id") id: Int,
+    ): Call<ListAnakOrtu>
+
+    //Get Profil Ortu ( Orangtua )
+    @GET("get_profil_ortu/{id}")
+    fun getProfilOrtu(
+        @Path("id") id: Int,
+    ): Call<GetProfilOrtu>
+
+    //Get Kecamatan
+      @GET("list-kecamatan")
+    fun getKecamatan(
+    ): Call<ListKecamatan>
+
+    //Get Kelurahan/Desa
+    @GET("list-desa")
+    fun getKelurahan_Desa(
+    ): Call<ListKelurahanDesa>
+
+    //Update Profil Orangtua
+    @FormUrlEncoded
+    @POST("updateProfilOrtu/{id}")
+    fun updateProfilOrtu(
+        @Path("id") id: Int,
+        //update User
+        @Field("nama_pengguna") nama_pengguna: String,
+        @Field("kata_sandi") kata_sandi: String,
+        @Field("no_hp") no_hp: String,
+        //update orangtua
+        @Field("nik_ayah") nik_ayah: String,
+        @Field("nama_ayah") nama_ayah: String,
+        @Field("nik_ibu") nik_ibu: String,
+        @Field("nama_ibu") nama_ibu: String,
+        @Field("alamat") alamat: String,
+        @Field("rt") rt: String,
+        @Field("rw") rw: String,
+        @Field("kecamatan_id") kecamatan_id: String,
+        @Field("desa_kelurahan_id") desa_kelurahan_id: String,
+    ): Call<ResponsePesan>
 }
