@@ -9,5 +9,9 @@ class ListKelurahanDesa(
     data class Result(
         val id :Int?,
         val nama :String?,
-    )
+    ){
+        override fun toString(): String {
+            return nama!!
+        }
+    }
 }

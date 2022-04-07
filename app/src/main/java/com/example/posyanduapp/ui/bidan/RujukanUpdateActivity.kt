@@ -22,15 +22,19 @@ class RujukanUpdateActivity : AppCompatActivity() {
 
     private lateinit var binding : ActivityRujukanUpdateBinding
     var nik_anak: String=""
+
     var listAnak: ArrayList<ListAnak.Result> = ArrayList()
     lateinit var Rujukantunggal:GetRujukan.Result
     lateinit var Bidan: Bidan.Result
+
     var id_bidan :Int = 0
     var id_puskesmas: Int = 0
     var id_posyandu: Int = 0
     var idnya: String = ""
+
     var listPosyandus: ArrayList<ListPosyandu.Result> = ArrayList()
     var listPuskesmas: ArrayList<ListPuskesmas.Result> = ArrayList()
+
     private lateinit var s: SharedPref
     lateinit var pDialog: SweetAlertDialog
 
@@ -102,11 +106,12 @@ class RujukanUpdateActivity : AppCompatActivity() {
 
             try {
 //
-                if (binding.rujukanNamaanak.text.trim().isEmpty() || binding.rujukanNamaposyandu.text.trim()
-                        .isEmpty() || binding.rujukanNamapuskesmas.text.trim().isEmpty()|| binding.rujukanKeluhan.text.toString().trim().isEmpty()
-                    || binding.rujukanTanggalrujuk.text.trim().isEmpty()
+                if ( binding.rujukanNamaanak.text.trim().isEmpty() ||
+                     binding.rujukanNamaposyandu.text.trim().isEmpty() ||
+                     binding.rujukanNamapuskesmas.text.trim().isEmpty()||
+                     binding.rujukanKeluhan.text.toString().trim().isEmpty() ||
+                     binding.rujukanTanggalrujuk.text.trim().isEmpty()
                 ) {
-
                     pDialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
                         .setTitleText("Isi Semua Form")
                         .setConfirmClickListener {
@@ -116,6 +121,7 @@ class RujukanUpdateActivity : AppCompatActivity() {
                 } else {
                     PostRujukan()
                 }
+
             } catch (e: Exception) {
                 e.printStackTrace()
             }
@@ -176,7 +182,6 @@ class RujukanUpdateActivity : AppCompatActivity() {
                         // set adapter and layout manager for rv
                         listPosyandus = data
                         val adapter = ArrayAdapter(applicationContext, R.layout.simple_list_item_1, listPosyandus)
-
                         binding.rujukanNamaposyandu.setAdapter(adapter)
                     }
                 }

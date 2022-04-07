@@ -268,15 +268,33 @@ interface ApiEndpoint {
     ): Call<GetProfilOrtu>
 
     //Get Kecamatan
-    @GET("get_kecamatan")
+      @GET("list-kecamatan")
     fun getKecamatan(
-        @Path("id") id: Int,
     ): Call<ListKecamatan>
 
     //Get Kelurahan/Desa
-    @GET("get_kelurahan_desa/{id}")
+    @GET("list-desa")
     fun getKelurahan_Desa(
-        @Path("id") id: Int,
     ): Call<ListKelurahanDesa>
 
+    //Update Profil Orangtua
+    @FormUrlEncoded
+    @POST("updateProfilOrtu/{id}")
+    fun updateProfilOrtu(
+        @Path("id") id: Int,
+        //update User
+        @Field("nama_pengguna") nama_pengguna: String,
+        @Field("kata_sandi") kata_sandi: String,
+        @Field("no_hp") no_hp: String,
+        //update orangtua
+        @Field("nik_ayah") nik_ayah: String,
+        @Field("nama_ayah") nama_ayah: String,
+        @Field("nik_ibu") nik_ibu: String,
+        @Field("nama_ibu") nama_ibu: String,
+        @Field("alamat") alamat: String,
+        @Field("rt") rt: String,
+        @Field("rw") rw: String,
+        @Field("kecamatan_id") kecamatan_id: String,
+        @Field("desa_kelurahan_id") desa_kelurahan_id: String,
+    ): Call<ResponsePesan>
 }

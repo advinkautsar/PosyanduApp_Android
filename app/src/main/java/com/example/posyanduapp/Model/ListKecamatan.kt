@@ -12,6 +12,10 @@ class ListKecamatan(
     data class Result(
         val nama_kecamatan: String?,
         val kabupaten: String?,
-        val id :Int?,
-    )
+        val id: Int?,
+    ) {
+        override fun toString(): String {
+            return nama_kecamatan!!
+        }
+    }
 }

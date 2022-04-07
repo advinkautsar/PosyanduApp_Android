@@ -48,7 +48,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="@dimen/_6sdp"
             android:fontFamily="@font/intermedium"
-            android:text="Silahkan masukkan nama lengkap dan nomor NIK peserta yang ingin di daftarkan pada aplikasi "
+            android:text="Silahkan masukkan NIK ibu untuk mencari ketersediaan data Pendaftaran "
             android:textAlignment="center"
             android:textColor="#838391"
             android:textSize="@dimen/_12ssp"/>
@@ -78,7 +78,7 @@
 
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             app:startIconDrawable="@drawable/ic_baseline_how_to_reg_24"
             app:startIconTint="#003399"

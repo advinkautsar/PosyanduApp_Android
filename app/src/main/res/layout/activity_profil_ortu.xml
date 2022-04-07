@@ -203,7 +203,6 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
-                    app:boxBackgroundColor="@color/white"
                     >
 
                     <AutoCompleteTextView
@@ -222,8 +221,7 @@
                     style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
                     android:layout_width="@dimen/_140sdp"
                     android:layout_height="wrap_content"
-                    android:hint="Kecamatan"
-                    app:boxBackgroundColor="@color/white">
+                    android:hint="Kecamatan">
 
                     <AutoCompleteTextView
                         android:id="@+id/edt_kecamatan"
@@ -233,7 +231,8 @@
                         android:fontFamily="@font/monserratregular"
                         android:paddingStart="0dp"
                         android:inputType="none"
-                        android:textSize="@dimen/_10ssp"/>
+                        android:textSize="@dimen/_10ssp"
+                        />
 
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -337,7 +336,7 @@
                 android:layout_marginLeft="@dimen/_15sdp"
                 android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginRight="@dimen/_15sdp"
-                android:hint="Password"
+                android:hint="Kata Sandi ( Tuliskan Kata sandi baru anda )"
                 app:passwordToggleEnabled="true">
 
                 <com.google.android.material.textfield.TextInputEditText
