@@ -101,7 +101,7 @@ class JadwalPosyanduActivity : AppCompatActivity() {
        }
         //intentback
         binding.backToberandakader.setOnClickListener {
-            startActivity(Intent(this, RiwayatJadwalPosyanduActivity::class.java))
+            startActivity(Intent(this, BerandakaderActivity::class.java))
         }
         binding.jadwalposyanduNamaposyandu.onItemClickListener =
             OnItemClickListener { arg0, arg1, position, arg3 ->
@@ -163,7 +163,6 @@ class JadwalPosyanduActivity : AppCompatActivity() {
     }
 
     private fun simpanJadwalPosyandu() {
-
         ApiService.endpoint.postJadwalPosyandu(
             binding.jadwalposyanduTanggalposyandu.text.toString(),
             binding.jadwalposyanduWaktukegiatan.text.toString(),
@@ -178,7 +177,6 @@ class JadwalPosyanduActivity : AppCompatActivity() {
             ) {
                 val status = response.body()?.status
                 val pesanan = response.body()?.pesan
-
                 if (status!!) {
                     Toast.makeText(this@JadwalPosyanduActivity, pesanan, Toast.LENGTH_LONG).show()
 //                    this@KelolajadwalimunisasiActivity.fragmentManager?.popBackStack()

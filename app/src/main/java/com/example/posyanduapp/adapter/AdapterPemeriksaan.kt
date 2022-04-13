@@ -35,7 +35,6 @@ class AdapterPemeriksaan (
     class PesananViewHolder(var binding: ItemLayoutRiwayatpemkesBinding) :
         RecyclerView.ViewHolder(binding.root) {
         // define itemView from xml
-
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PesananViewHolder {
@@ -84,7 +83,6 @@ class AdapterPemeriksaan (
                     currentItem.id?.let {
                         ApiService.endpoint.getdeletepemkes(
                             it.toInt()
-
                         ).enqueue(object : Callback<ResponsePesan> {
                             override fun onResponse(
                                 call: Call<ResponsePesan>,
@@ -99,8 +97,7 @@ class AdapterPemeriksaan (
                                     val activity = context as Activity
                                     activity.startActivity(i)
                                     activity.finish()
-                                    //                    this@KelolajadwalimunisasiActivity.fragmentManager?.popBackStack()
-
+                                    //                 this@KelolajadwalimunisasiActivity.fragmentManager?.popBackStack()
                                 } else {
                                     Toast.makeText(context, pesanan, Toast.LENGTH_LONG).show()
                                 }

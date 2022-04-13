@@ -420,19 +420,11 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
 
 
     private fun PostPemeriksaanKesehatan() {
-
-
         ApiService.endpoint.updatepemeriksaankesehatan(
-            idnya,
-            id_bidan.toString(),
-            nik_anak.toString(),
-            id_imun.toString(), id_imun2.toString(), id_imun3.toString(),
-            vitAmerahs,vitABirus,
-            fe1s,fe2s,
-            pmts,
-            asis,
-            oralits,
-            obatcacings,
+            idnya,id_bidan.toString(),
+            nik_anak.toString(),id_imun.toString(), id_imun2.toString(), id_imun3.toString(),
+            vitAmerahs,vitABirus,fe1s,fe2s,
+            pmts,asis,oralits,obatcacings,
             binding.periksaTanggalpemeriksaan.text.toString()
             ).enqueue(object : Callback<ResponsePesan> {
             override fun onResponse(
@@ -444,10 +436,6 @@ class PemeriksaanKesehatanUpdateActivity : AppCompatActivity() {
 
                 if (status!!) {
                     Toast.makeText(this@PemeriksaanKesehatanUpdateActivity, pesanan, Toast.LENGTH_LONG).show()
-//                    this@KelolajadwalimunisasiActivity.fragmentManager?.popBackStack()
-//                    val intent = Intent(this@PemeriksaanKesehatanUpdateActivity, RiwayatPemKesActivity::class.java)
-
-
                     listAsi.clear()
                     listImunisasi.clear()
                     listImunisasi2.clear()
