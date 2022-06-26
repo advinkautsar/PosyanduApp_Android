@@ -2,6 +2,7 @@ package com.example.posyanduapp.ui.orangtua
 
 import android.content.Intent
 import android.os.Bundle
+import android.os.Handler
 import android.util.Log
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
@@ -41,6 +42,17 @@ class NotifikasiActivity : AppCompatActivity() {
             startActivity(Intent(this, BerandaOrtuActivity::class.java))
         }
         getlistNotif()
+
+        //swiper Refresh
+        binding.swlayout.setOnRefreshListener {
+            // Handler untuk menjalankan jeda selama 5 detik
+            Handler().postDelayed({ // Berhenti berputar/refreshing
+                binding.swlayout.isRefreshing = false
+                getlistNotif()
+                Toast.makeText(this, "Data diperbaharui", Toast.LENGTH_SHORT).show()
+            }, 3000)
+
+        }
 
         //add isi
 //        postToList()

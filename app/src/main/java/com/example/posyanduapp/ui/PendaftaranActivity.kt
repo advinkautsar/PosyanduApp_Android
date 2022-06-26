@@ -49,7 +49,7 @@ class PendaftaranActivity : AppCompatActivity() {
                 token = task.result.toString()
 
                 Log.d("Token Firebase", token)
-                Toast.makeText(this, token, Toast.LENGTH_SHORT).show()
+//                Toast.makeText(this, token, Toast.LENGTH_SHORT).show()
             })
 
 

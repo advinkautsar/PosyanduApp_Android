@@ -173,11 +173,9 @@ class KelolajadwalimunisasiActivity : AppCompatActivity() {
             })
     }
     private fun PostJadwalImunisasi() {
-
-
         ApiService.endpoint.postJadwalImunisasi(
             binding.kelolaimunisasiTanggal.text.toString()
-                ,id_bidan.toString(),
+            ,id_bidan.toString(),
             nik_anak.toString(),
             id_imun.toString()
         ).enqueue(object : Callback<ResponsePesan> {
@@ -199,7 +197,8 @@ class KelolajadwalimunisasiActivity : AppCompatActivity() {
 
             override fun onFailure(call: Call<ResponsePesan>, t: Throwable) {
                 t.printStackTrace()
-                Toast.makeText(this@KelolajadwalimunisasiActivity, "Kesalahan tidak terduga!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@KelolajadwalimunisasiActivity,
+                    "Kesalahan tidak terduga!", Toast.LENGTH_LONG).show()
 
             }
 

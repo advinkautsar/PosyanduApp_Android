@@ -354,18 +354,11 @@ class PemeriksaankesehatanCreateActivity : AppCompatActivity() {
     }
 
     private fun PostPemeriksaanKesehatan() {
-
-
         ApiService.endpoint.postpemeriksaankesehatan(
-           id_bidan.toString(),
-            nik_anak.toString(),
-            id_imun.toString(), id_imun2.toString(), id_imun3.toString(),
-            vitAmerahs,vitABirus,
-            fe1s,fe2s,
-            pmts,
-            asis,
-            oralits,
-            obatcacings,
+           id_bidan.toString(), nik_anak.toString(),
+            id_imun.toString(), id_imun2.toString(), id_imun3.toString(), vitAmerahs,vitABirus,
+            fe1s,fe2s, pmts,
+            asis,oralits, obatcacings,
             binding.periksaTanggalpemeriksaan.text.toString(),
         ).enqueue(object : Callback<ResponsePesan> {
             override fun onResponse(

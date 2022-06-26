@@ -21,8 +21,6 @@ import java.util.*
 class FirebaseNotification : FirebaseMessagingService() {
 
     var context: Context? = null
-
-
     override fun onMessageReceived(message: RemoteMessage) {
         super.onMessageReceived(message)
 
