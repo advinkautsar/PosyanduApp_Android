@@ -297,4 +297,13 @@ interface ApiEndpoint {
         @Field("kecamatan_id") kecamatan_id: String,
         @Field("desa_kelurahan_id") desa_kelurahan_id: String,
     ): Call<ResponsePesan>
+
+    @FormUrlEncoded
+    @POST("create_datatimbang")
+    fun postpenimbangan(
+        @Field("nik_anak")nik_anak: String,
+        @Field("berat_badan")berat_badan: String,
+        @Field("tinggi_badan")tinggi_badan: String,
+        @Field("lingkar_kepala")lingkar_kepala: String,
+    ): Call<ResponsePesan>
 }

@@ -34,7 +34,7 @@ class BerandakaderActivity : AppCompatActivity() {
 
         //intent
         binding.imgKartuanak.setOnClickListener {
-            startActivity(Intent(this, KartuAnakActivity::class.java))
+            startActivity(Intent(this, ScanQRCodeTimbanganActivity::class.java))
         }
         binding.imgJadwalposyandu.setOnClickListener {
             startActivity(Intent(this, JadwalPosyanduActivity::class.java))

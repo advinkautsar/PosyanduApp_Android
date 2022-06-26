@@ -82,5 +82,7 @@ dependencies {
     implementation 'com.github.f0ris.sweetalert:library:1.5.6'
 
     implementation 'com.android.support:support-v4:29.0.0'
+    implementation 'me.dm7.barcodescanner:zxing:1.9'
+    implementation 'com.google.android.gms:play-services-vision:20.1.3'
 
 }

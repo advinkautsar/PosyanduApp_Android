@@ -47,7 +47,7 @@ class BeratBadanUmurFragment : Fragment() {
         lineChart = view.findViewById(R.id.line_chart_bbu)
 
         linelist = ArrayList()
-        linelist.add(Entry(10f,100f))
+        linelist.add(Entry(1f,100f))
         linelist.add(Entry(20f,300f))
         linelist.add(Entry(30f,250f))
         linelist.add(Entry(40f,700f))
