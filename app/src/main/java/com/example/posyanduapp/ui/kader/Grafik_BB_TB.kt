@@ -20,6 +20,7 @@ class Grafik_BB_TB : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grafik_bb_tb)
 
+
         webView.webViewClient = WebViewClient()
 
         // this will load the url of the website

@@ -15,10 +15,7 @@ import com.example.posyanduapp.ui.bidan.DetailAnakBidan
 import com.example.posyanduapp.ui.bidan.GrafikPertumbuhanActivity
 import com.example.posyanduapp.ui.bidan.RiwayatPemKesActivity
 import com.example.posyanduapp.ui.bidan.RiwayatRujukanPerAnakBidan
-import com.example.posyanduapp.ui.kader.DetailAnakKaderActivity
-import com.example.posyanduapp.ui.kader.GrafikPertumbuhanAnakKaderActivity
-import com.example.posyanduapp.ui.kader.RiwayatPemkesKaderActivity
-import com.example.posyanduapp.ui.kader.RiwayatRujukanAnakKaderActivity
+import com.example.posyanduapp.ui.kader.*
 
 class AdapterFiturAnakKader(
     private val context: Context,
@@ -50,6 +47,7 @@ class AdapterFiturAnakKader(
         holder.binding.imgPopupmenuanak.setOnClickListener {
             currentItem.nama_anak?.let { it1 ->
                 popUpMenus(it,currentItem.nik_anak.toString(),
+
                     it1
                 )
             }
@@ -70,6 +68,13 @@ class AdapterFiturAnakKader(
                 }
                 R.id.menu_grafik->{
                     val intent = Intent(itemView.context, GrafikPertumbuhanAnakKaderActivity::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
+                    itemView.getContext().startActivity(intent);
+                    true
+                }
+                R.id.grafik_bb_tb->{
+                    val intent = Intent(itemView.context, Grafik_BB_TB::class.java)
                     intent.putExtra("nik", nik_anak)
                     intent.putExtra("nama", nama_anak)
                     itemView.getContext().startActivity(intent);
