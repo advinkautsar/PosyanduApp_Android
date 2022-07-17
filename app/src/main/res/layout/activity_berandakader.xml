@@ -193,7 +193,7 @@
 
                     <ImageView
                         android:id="@+id/img_kartuanak"
-                        android:src="@drawable/kartu"
+                        android:src="@drawable/qrcode"
                         android:layout_width="@dimen/_80sdp"
                         android:layout_height="@dimen/_80sdp"
                         android:clickable="true"
@@ -206,7 +206,7 @@
                         android:textSize="@dimen/_13ssp"
                         android:layout_gravity="center"
                         android:gravity="center"
-                        android:text="Daftar Kartu\n Anak"
+                        android:text="Scan QR Code "
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                 </LinearLayout>

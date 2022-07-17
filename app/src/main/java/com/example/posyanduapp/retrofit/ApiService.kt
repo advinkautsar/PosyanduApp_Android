@@ -8,7 +8,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 object ApiService {
 
 //    val BASE_URL: String = "http://192.168.100.9/TA_Posyandu2021/api/"
-    val BASE_URL: String = "http://192.168.1.4/PosyanduWeb/api/"
+    val BASE_URL: String = "http://192.168.100.52/SistemInformasiPosyandu/public/api/"
 
     val interceptor: HttpLoggingInterceptor = HttpLoggingInterceptor().apply {
         level = HttpLoggingInterceptor.Level.BODY
