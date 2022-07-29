@@ -20,7 +20,7 @@ interface ApiEndpoint {
     @POST("login")
     fun login(
         @Field("nama_pengguna") nama_pengguna:String,
-        @Field("kata_sandi") kata_sandi:String,
+        @Field("password") kata_sandi:String,
         @Field("token") token:String,
     ):Call<ResponRegister>
 }
