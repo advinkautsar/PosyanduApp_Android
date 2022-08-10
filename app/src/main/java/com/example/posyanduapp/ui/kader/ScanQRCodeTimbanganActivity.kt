@@ -105,7 +105,7 @@ class ScanQRCodeTimbanganActivity : AppCompatActivity() {
                         cameraSource.stop()
                         Toast.makeText(this@ScanQRCodeTimbanganActivity, "value- $scannedValue", Toast.LENGTH_SHORT).show()
                         var latlangss =
-                            scannedValue.replace(",", ".").split(";".toRegex())
+                            scannedValue.replace(".", ",").split(",".toRegex())
                         val strs = latlangss[0]
                         val strs2 = latlangss[1]
                         val strs3 = latlangss[2]
