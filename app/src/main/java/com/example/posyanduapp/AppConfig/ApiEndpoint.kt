@@ -12,7 +12,7 @@ interface ApiEndpoint {
     @POST("register")
     fun register(
         @Field("nama_pengguna") nama_pengguna:String,
-        @Field("password") password: String,
+        @Field("kata_sandi") kata_sandi:String,
         @Field("no_hp") no_hp:String,
         ):Call<ResponRegister>
 
@@ -20,7 +20,7 @@ interface ApiEndpoint {
     @POST("login")
     fun login(
         @Field("nama_pengguna") nama_pengguna:String,
-        @Field("password") password: String,
+        @Field("password") kata_sandi:String,
         @Field("token") token:String,
     ):Call<ResponRegister>
 }

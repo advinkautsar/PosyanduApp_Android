@@ -1,12 +1,14 @@
 package com.example.posyanduapp.ui.kader
 
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.webkit.WebChromeClient
 import android.webkit.WebSettings
 import android.webkit.WebView
 import android.webkit.WebViewClient
 import androidx.appcompat.app.AppCompatActivity
+import com.example.posyanduapp.BuildConfig.DEBUG
 import com.example.posyanduapp.R
 import com.example.posyanduapp.databinding.ActivityFiturAnakKaderBinding
 import com.example.posyanduapp.databinding.ActivityGrafikBbTbBinding
@@ -16,15 +18,18 @@ import kotlinx.android.synthetic.main.activity_grafik_bb_tb.*
 
 class Grafik_BB_TB : AppCompatActivity() {
     lateinit var binding: ActivityGrafikBbTbBinding
+    var idnya: String = ""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_grafik_bb_tb)
 
 
+
+        idnya = intent.getStringExtra("nik").toString()
         webView.webViewClient = WebViewClient()
 
         // this will load the url of the website
-        webView.loadUrl(ApiService.BASE_URL_WEB+"grafik/standart_bb_pb/6")
+        webView.loadUrl(ApiService.BASE_URL_WEB+"grafikall/standart_bb_tb/"+idnya)
 
         // this will enable the javascript settings
         webView.settings.javaScriptEnabled = true

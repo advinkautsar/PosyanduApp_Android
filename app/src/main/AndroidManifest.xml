@@ -20,7 +20,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PosyanduApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.kader.Grafik_BB_TB"></activity>
+        <activity android:name=".ui.kader.Grafik_BB_TB"
+            android:screenOrientation="landscape"
+            >
+
+        </activity>
         <activity android:name=".ui.kader.PenimbanganActivity" />
         <activity android:name=".ui.kader.ScanQRCodeTimbanganActivity" />
         <activity
