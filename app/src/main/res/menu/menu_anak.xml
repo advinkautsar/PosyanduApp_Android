@@ -5,15 +5,32 @@
         android:title="Detail Anak"/>
     <item
         android:id="@+id/menu_grafik"
-        android:title="Grafik Pertumbuhan"/>
+        android:title="Riwayat Gizi"/>
     <item
         android:id="@+id/menu_riwayatperiksa"
         android:title="Riwayat Pemeriksaan Kesehatan"/>
     <item
         android:id="@+id/menu_rujukan"
         android:title="Riwayat Rujukan Anak"/>
-
+    <item
+        android:id="@+id/grafik_bb_u"
+        android:title="Grafik BB/U"/>
+    <item
+        android:id="@+id/grafik_tb_u"
+        android:title="Grafik TB/U"/>
+    <item
+        android:id="@+id/grafik_pb_u"
+        android:title="Grafik PB/U"/>
+    <item
+        android:id="@+id/grafik_lk_u"
+        android:title="Grafik LK/U"/>
     <item
         android:id="@+id/grafik_bb_tb"
-        android:title="Grafik BB TB"/>
+        android:title="Grafik BB/TB"/>
+    <item
+        android:id="@+id/grafik_bb_pb"
+        android:title="Grafik BB/PB"/>
+    <item
+        android:id="@+id/grafik_imt_u"
+        android:title="Grafik IMT/U"/>
 </menu>

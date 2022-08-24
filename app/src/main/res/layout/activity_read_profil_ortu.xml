@@ -289,6 +289,50 @@
 
             </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
+                android:fontFamily="@font/monserratbold"
+                android:gravity="center"
+                android:text="Ubah Status Persetujuan"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_15sdp"
+                android:layout_marginRight="@dimen/_15sdp"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/edt_status_persetujuan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/monserratregular"
+                    android:paddingStart="0dp"
+                    android:hint="Status Persetujuan"
+                    android:inputType="none"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <Button
+                android:id="@+id/btn_ubahprofilortu"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_45sdp"
+                android:layout_margin="@dimen/_15sdp"
+                android:fontFamily="@font/interbold"
+                android:text="Simpan"
+                android:textAllCaps="false"
+                android:textSize="@dimen/_12ssp" />
+
         </LinearLayout>
 
 

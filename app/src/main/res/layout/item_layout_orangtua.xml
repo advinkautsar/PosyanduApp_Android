@@ -36,5 +36,32 @@
             android:layout_marginBottom="@dimen/_10ssp"
             android:fontFamily="@font/monserratregular"/>
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Status :"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginBottom="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+
+            <TextView
+                android:id="@+id/tvorangtua_status_persetujuan"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_10sdp"
+                android:text="Disetujui"
+                android:textSize="@dimen/_10ssp"
+                android:layout_marginBottom="@dimen/_10ssp"
+                android:fontFamily="@font/monserratregular"/>
+        </LinearLayout>
+
     </LinearLayout>
+
 </androidx.cardview.widget.CardView>

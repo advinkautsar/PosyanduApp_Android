@@ -21,6 +21,7 @@ class GetDetailOrtu(
         val alamat: String?,
         val rt: String?,
         val rw: String?,
+        val status_persetujuan: String?,
         val nama_kecamatan: String?,
         val nama: String?,
         )

@@ -12,6 +12,10 @@
         <item>Posyandu Mawar</item>
         <item>Posyandu Delima</item>
     </string-array>
+    <string-array name="jenis_kelamin">
+        <item>L</item>
+        <item>P</item>
+    </string-array>
     <string-array name="nama_bidan">
         <item>Bidan Ida</item>
         <item>Bidan Tuti</item>

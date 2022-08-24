@@ -15,15 +15,6 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
 
-        <com.google.android.material.imageview.ShapeableImageView
-            android:id="@+id/tipkes_gambar"
-            android:layout_width="@dimen/_70sdp"
-            android:layout_height="@dimen/_70sdp"
-            android:src="@mipmap/a"
-            android:scaleType="centerCrop"
-            android:adjustViewBounds="true"
-            app:shapeAppearanceOverlay="@style/roundedimage"/>
-
         <TextView
             android:id="@+id/tipkes_judul"
             android:layout_width="wrap_content"
@@ -34,7 +25,8 @@
             android:text="Kenali tanda - tanda anak sehat"
             android:layout_marginStart="@dimen/_16sdp"
             android:layout_marginEnd="@dimen/_16sdp"
-            android:layout_marginTop="@dimen/_8sdp"/>
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_10sdp"/>
 
     </LinearLayout>
 

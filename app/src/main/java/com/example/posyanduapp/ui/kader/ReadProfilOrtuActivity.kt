@@ -4,12 +4,17 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.AdapterView
+import android.widget.ArrayAdapter
 import android.widget.Toast
+import cn.pedant.SweetAlert.SweetAlertDialog
 import com.example.posyanduapp.Helper.SharedPref
 import com.example.posyanduapp.Model.GetDetailAnak
 import com.example.posyanduapp.Model.GetDetailOrtu
+import com.example.posyanduapp.Model.ListPersetujuan
 import com.example.posyanduapp.R
 import com.example.posyanduapp.databinding.ActivityReadProfilOrtuBinding
+import com.example.posyanduapp.model.ResponsePesan
 import com.example.posyanduapp.retrofit.ApiService
 import com.example.posyanduapp.ui.orangtua.ProfilOrtuActivity
 import retrofit2.Call
@@ -19,9 +24,14 @@ import retrofit2.Response
 class ReadProfilOrtuActivity : AppCompatActivity() {
 
     var idnya: String = ""
-    lateinit var DataDetailOrtu: GetDetailOrtu.Result
+    lateinit var DataProfilOrtu: GetDetailOrtu.Result
     lateinit var binding: ActivityReadProfilOrtuBinding
+
     private lateinit var s: SharedPref
+    lateinit var pDialog: SweetAlertDialog
+
+    lateinit var status_persetujuan:String
+    var liststatuspersetujuan: ArrayList<ListPersetujuan.Result> = ArrayList()
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -31,6 +41,7 @@ class ReadProfilOrtuActivity : AppCompatActivity() {
 
         idnya = intent.getStringExtra("idnya").toString()
         s = SharedPref(this)
+        getstatuspersetujuan()
 
         if (idnya!=null){
             getProfilOrtu(idnya)
@@ -42,11 +53,88 @@ class ReadProfilOrtuActivity : AppCompatActivity() {
         binding.btnKembaliproflortu.setOnClickListener {
             startActivity(Intent(this,OrangtuaActivity::class.java))
         }
+        binding.btnUbahprofilortu.setOnClickListener {
+            try {
+                if (
+                    binding.edtStatusPersetujuan.text!!.trim().isEmpty()
+                ){
+                    pDialog = SweetAlertDialog(this, SweetAlertDialog.WARNING_TYPE)
+                        .setTitleText("Status Persetujuan tidak boleh kosong")
+                        .setConfirmClickListener {
+                            hideDialog()
+                        }
+                    showDialog()
+
+                }else{
+                    ubahpersetujuan()
+                }
+
+            }catch (e: Exception) {
+                e.printStackTrace()
+            }
+        }
+
+        binding.edtStatusPersetujuan.onItemClickListener =
+            AdapterView.OnItemClickListener { arg0, arg1, position, arg3 ->
+                status_persetujuan= liststatuspersetujuan.get(position).toString()
 
 
-
+                Log.d("your selected item", "" + status_persetujuan)
+            }
     }
 
+    private fun getstatuspersetujuan() {
+        ApiService.endpoint.getstatuspersetujuan()
+            .enqueue(object : Callback<ListPersetujuan>{
+                override fun onResponse(
+                    call: Call<ListPersetujuan>,
+                    response: Response<ListPersetujuan>
+                ) {
+                    val status = response.body()?.status
+                    val data = response.body()?.data
+                    Log.d("responseData2", data.toString())
+                    if (status == "success" && data != null) {
+                        // set adapter and layout manager for rv
+                        liststatuspersetujuan = data
+
+                        val adapterpersetujuan= ArrayAdapter(applicationContext, android.R.layout.simple_list_item_1, liststatuspersetujuan)
+
+                        binding.edtStatusPersetujuan.setAdapter(adapterpersetujuan)
+                    }
+
+                }
+
+                override fun onFailure(call: Call<ListPersetujuan>, t: Throwable) {
+                    TODO("Not yet implemented")
+                }
+
+            })
+    }
+    private fun ubahpersetujuan() {
+        ApiService.endpoint.ubah_persetujuan(idnya,binding.edtStatusPersetujuan.text.toString())
+            .enqueue(object : Callback<ResponsePesan>{
+                override fun onResponse(
+                    call: Call<ResponsePesan>,
+                    response: Response<ResponsePesan>
+                ) {
+                    val status = response.body()?.status
+                    val pesanan = response.body()?.pesan
+
+                    if (status!!){
+                        Toast.makeText(this@ReadProfilOrtuActivity, pesanan, Toast.LENGTH_LONG).show()
+                        finish()
+                    } else{
+                        Toast.makeText(this@ReadProfilOrtuActivity, pesanan, Toast.LENGTH_LONG).show()
+
+                    }
+                }
+
+                override fun onFailure(call: Call<ResponsePesan>, t: Throwable) {
+                    TODO("Not yet implemented")
+                }
+
+            })
+    }
     private fun getProfilOrtu(idnya: String) {
 
         ApiService.endpoint.getProfilOrtu(idnya)
@@ -59,17 +147,18 @@ class ReadProfilOrtuActivity : AppCompatActivity() {
                     val data = response.body()?.data
                     Log.d("respondReadProfilOrtu", data.toString())
                     if (status == "success" && data != null){
-                        DataDetailOrtu = data
+                        DataProfilOrtu = data
 
-                        binding.edtNIKayah.setText(DataDetailOrtu.nik_ayah)
-                        binding.edtNamaayah.setText(DataDetailOrtu.nama_ayah)
-                        binding.edtNIKibu.setText(DataDetailOrtu.nik_ibu)
-                        binding.edtNamaibu.setText(DataDetailOrtu.nama_ibu)
-                        binding.edtAlamatrumah.setText(DataDetailOrtu.alamat)
-                        binding.edtDesakelurahan.setText(DataDetailOrtu.nama)
-                        binding.edtKecamtan.setText(DataDetailOrtu.nama_kecamatan)
-                        binding.edtRt.setText(DataDetailOrtu.rt)
-                        binding.edtRw.setText(DataDetailOrtu.rw)
+                        binding.edtNIKayah.setText(DataProfilOrtu.nik_ayah)
+                        binding.edtNamaayah.setText(DataProfilOrtu.nama_ayah)
+                        binding.edtNIKibu.setText(DataProfilOrtu.nik_ibu)
+                        binding.edtNamaibu.setText(DataProfilOrtu.nama_ibu)
+                        binding.edtAlamatrumah.setText(DataProfilOrtu.alamat)
+                        binding.edtDesakelurahan.setText(DataProfilOrtu.nama)
+                        binding.edtKecamtan.setText(DataProfilOrtu.nama_kecamatan)
+                        binding.edtRt.setText(DataProfilOrtu.rt)
+                        binding.edtRw.setText(DataProfilOrtu.rw)
+                        binding.edtStatusPersetujuan.setText(DataProfilOrtu.status_persetujuan)
 
                     }
                 }
@@ -80,5 +169,11 @@ class ReadProfilOrtuActivity : AppCompatActivity() {
                 }
 
             })
+    }
+    private fun showDialog() {
+        if (!pDialog.isShowing) pDialog.show()
+    }
+    private fun hideDialog() {
+        if (pDialog.isShowing) pDialog.dismiss()
     }
 }

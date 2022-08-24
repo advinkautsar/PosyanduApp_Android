@@ -42,6 +42,9 @@ class FiturAnakOrtuActivity : AppCompatActivity() {
         binding.btnKembalianak.setOnClickListener {
             startActivity(Intent(this,BerandaOrtuActivity::class.java))
         }
+        binding.fabTambahanak.setOnClickListener {
+            startActivity(Intent(this, FiturTambahAnakActivity::class.java))
+        }
 
 
     }

@@ -2,9 +2,11 @@
   <library name="Gradle: com.google.android.gms:play-services-flags:17.0.0@aar">
     <CLASSES>
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/1ffe3f5c0c71f8e967c5a0f3706ba069/transformed/jetified-play-services-flags-17.0.0/res" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e0227273ad2d82b093ababf30d2a6566/transformed/jetified-play-services-flags-17.0.0/AndroidManifest.xml" />
       <root url="file://$USER_HOME$/.gradle/caches/transforms-3/e0227273ad2d82b093ababf30d2a6566/transformed/jetified-play-services-flags-17.0.0/res" />
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/e0227273ad2d82b093ababf30d2a6566/transformed/jetified-play-services-flags-17.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/6f895256e5a07be43603ca4934c79f0c/transformed/jetified-play-services-flags-17.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb2590f8e67a7c32044eb1ab9f5aa74c/transformed/jetified-play-services-flags-17.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-3/cb2590f8e67a7c32044eb1ab9f5aa74c/transformed/jetified-play-services-flags-17.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-3/cb2590f8e67a7c32044eb1ab9f5aa74c/transformed/jetified-play-services-flags-17.0.0/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

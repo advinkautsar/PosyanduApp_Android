@@ -20,11 +20,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.PosyanduApp"
         android:usesCleartextTraffic="true">
-        <activity android:name=".ui.kader.Grafik_BB_TB"
-            android:screenOrientation="landscape"
-            >
-
-        </activity>
+        <activity
+            android:name=".ui.orangtua.ContentTipkes"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ui.kader.Grafik_IMT_U"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.kader.Grafik_PB_U"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.kader.Grafik_LK_U"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.kader.Grafik_TB_U"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.kader.Grafik_BB_U"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.kader.Grafik_BB_PB"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.kader.Grafik_BB_TB"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".ui.orangtua.FiturTambahAnakActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.RegistrasiActivity"
+            android:exported="false" />
         <activity android:name=".ui.kader.PenimbanganActivity" />
         <activity android:name=".ui.kader.ScanQRCodeTimbanganActivity" />
         <activity

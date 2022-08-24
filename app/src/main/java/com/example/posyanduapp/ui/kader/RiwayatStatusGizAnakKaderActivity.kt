@@ -31,8 +31,8 @@ class RiwayatStatusGizAnakKaderActivity : AppCompatActivity() {
 
         rv_liststatusgiziKader = binding.rvStatusgiziKader
 
-        idnya = intent.getStringExtra("nik_anak").toString()
-        namanya= intent.getStringExtra("nama_anak").toString()
+        idnya = intent.getStringExtra("nik").toString()
+        namanya= intent.getStringExtra("nama").toString()
         binding.statusNamaanak.setText(namanya)
         getDetailStatGizAnakID(idnya)
 

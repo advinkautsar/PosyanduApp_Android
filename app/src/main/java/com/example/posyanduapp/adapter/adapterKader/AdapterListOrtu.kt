@@ -35,6 +35,7 @@ class AdapterListOrtu(
         // set value to the holder view
         holder.binding.tvorangtuaNama.text = currentItem.nama_ibu
         holder.binding.tvorangtuaNamaPosyandu.text = currentItem.nama_posyandu
+        holder.binding.tvorangtuaStatusPersetujuan.text = currentItem.status_persetujuan
 
         holder.itemView.setOnClickListener {
                 val intent = Intent(context, ReadProfilOrtuActivity::class.java)

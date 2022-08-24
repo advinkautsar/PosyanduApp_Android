@@ -5,10 +5,33 @@
       <map>
         <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/drawable/bg_beranda.xml" value="0.1445" />
         <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_berandakader.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_content_tipkes.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_detailortu.xml" value="0.18" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_fitur_anak_kader.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_fitur_anak_ortu.xml" value="0.18" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_fitur_tambah_anak.xml" value="0.18" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_grafik_bb_pb.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_grafik_bb_tb.xml" value="0.1925925925925926" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_grafik_bb_u.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_grafik_imt_u.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_grafik_lk_u.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_grafik_pb_u.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_grafik_pertumbuhan_anak_kader.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_grafik_tb_u.xml" value="0.19010416666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_jadwal_posyandu.xml" value="0.14629629629629629" />
         <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_login.xml" value="0.12222222222222222" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_orangtua.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_profil_ortu.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_read_profil_ortu.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_registrasi.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_riwayat_status_giz_anak_kader.xml" value="0.14629629629629629" />
         <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_scan_qrcode_timbangan.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/activity_tips_kesehatan.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/item_layout_anak.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/item_layout_orangtua.xml" value="0.22" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/item_layout_rujukan.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/layout/item_layout_tipkes.xml" value="0.14629629629629629" />
+        <entry key="..\:/Users/ADVIN/AndroidStudioProjects/PosyanduApp_Android/app/src/main/res/menu/menu_anak.xml" value="0.14629629629629629" />
         <entry key="..\:/Users/Advin/AndroidStudioProjects/TA_PosyanduApp/app/src/main/res/drawable-v24/bg_kesehatananak.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Advin/AndroidStudioProjects/TA_PosyanduApp/app/src/main/res/drawable/bg_beranda.xml" value="0.20260416666666667" />
         <entry key="..\:/Users/Advin/AndroidStudioProjects/TA_PosyanduApp/app/src/main/res/drawable/bg_searc.xml" value="0.20260416666666667" />

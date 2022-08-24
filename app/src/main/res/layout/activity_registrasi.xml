@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/_15sdp"
+    tools:context=".ui.RegistrasiActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/back_daftartocari"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:padding="5dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:clickable="true"
+            android:focusable="true"
+            android:foreground="?selectableItemBackground"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:text="Pendaftaran Peserta Posyandu "
+            android:fontFamily="@font/interbold"
+            android:textAlignment="center"
+            android:textColor="#000"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:fontFamily="@font/intermedium"
+            android:text="Silahkan isikan seluruh data pada formulir dibawah ini untuk mendaftar"
+            android:textAlignment="center"
+            android:textColor="#838391"
+            android:textSize="@dimen/_12ssp"/>
+
+        <!--   Formulir Data Akun     -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/monserratbold"
+            android:gravity="left"
+            android:text="Akun"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Nama Pengguna"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/daftar_namapengguna"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/intermedium"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            app:passwordToggleEnabled="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeWidthFocused="2dp"
+            android:hint="Kata Sandi">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/daftar_katasandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/intermedium"
+                android:textSize="@dimen/_10ssp"
+                android:inputType="textPassword" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="No Handphone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            app:boxStrokeWidthFocused="2dp"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/daftar_nohp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:textSize="@dimen/_10ssp"
+                android:fontFamily="@font/intermedium"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!--    Formulir Data Diri Orangtua   -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/monserratbold"
+            android:gravity="left"
+            android:text="Data Diri Orangtua"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/_138sdp"
+                android:layout_height="wrap_content"
+                android:hint="Nama Ayah">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/daftar_namaayah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monserratregular"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:hint="NIK Ayah">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/daftar_NIKayah"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/monserratregular"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/_138sdp"
+                android:layout_height="wrap_content"
+                android:hint="Nama Ibu">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/daftar_namaibu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monserratregular"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:hint="NIK Ibu">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/daftar_NIKibu"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/monserratregular"
+                    android:inputType="number"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Alamat Rumah">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/daftar_alamatrumah"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_70sdp"
+                android:fontFamily="@font/monserratregular"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="@dimen/_138sdp"
+                android:layout_height="wrap_content"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/daftar_desa_kelurahan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/monserratregular"
+                    android:hint="Desa / Kelurahan"
+                    android:inputType="none"
+                    android:textSize="@dimen/_10ssp"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:hint="Kecamatan">
+
+                <AutoCompleteTextView
+                    android:id="@+id/daftar_kecamatan"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/monserratregular"
+                    android:inputType="none"
+                    android:textSize="@dimen/_10ssp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/_138sdp"
+                android:layout_height="wrap_content"
+                android:hint="RT">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/daftar_rt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/monserratregular"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="wrap_content"
+                android:hint="RW">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/daftar_rw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:fontFamily="@font/monserratregular"
+                    android:inputType="text"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    android:textStyle="bold" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+        </LinearLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Posyandu"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/daftar_posyandu"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/monserratregular"
+                android:inputType="none"
+                android:textSize="@dimen/_10ssp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!--    Formulir Data Diri Anak    -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/monserratbold"
+            android:gravity="left"
+            android:text="Data Diri Anak "
+            android:textColor="@color/black"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="normal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:hint="Nama Anak">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/daftar_namaAnak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monserratregular"
+                android:gravity="top"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="NIK Anak">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/daftar_nikAnak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monserratregular"
+                android:gravity="top"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Berat Lahir Anak">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/daftar_beratlahirAnak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monserratregular"
+                android:gravity="top"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:hint="Panjang Lahir Anak">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/daftar_panjanglahirAnak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/monserratregular"
+                android:gravity="top"
+                android:inputType="text"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold" />
+
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            >
+
+            <AutoCompleteTextView
+                android:id="@+id/daftar_jeniskelaminAnak"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/monserratregular"
+                android:hint="Jenis Kelamin Anak"
+                android:inputType="none"
+                android:textSize="@dimen/_10ssp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            >
+
+            <EditText
+                android:id="@+id/daftar_tanggallahirAnak"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:drawableRight="@drawable/ic_baseline_date_range_24"
+                android:fontFamily="@font/intermedium"
+                android:hint="Tanggal Lahir Anak "
+                android:inputType="none"
+                android:textSize="@dimen/_10ssp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Button Daftar -->
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_pendaftaran"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_45sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:fontFamily="@font/interbold"
+            android:textSize="@dimen/_12ssp"
+            android:text="Daftar"
+            android:textAllCaps="false"/>
+
+    </LinearLayout>
+
+</ScrollView>

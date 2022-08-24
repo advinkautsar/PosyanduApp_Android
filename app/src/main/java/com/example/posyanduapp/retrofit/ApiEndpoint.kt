@@ -52,7 +52,7 @@ interface ApiEndpoint {
         @Path("id") id:Int,
         ): Call<Kader>
 
-    @GET("get_user_ortu/{id}")
+    @GET("get_ortu_anak/{id}")
     fun getortu(
         @Path("id") id:Int,
     ): Call<Orangtua>
@@ -306,4 +306,73 @@ interface ApiEndpoint {
         @Field("tinggi_badan")tinggi_badan: String,
         @Field("lingkar_kepala")lingkar_kepala: String,
     ): Call<ResponsePesan>
+
+    @FormUrlEncoded
+    @POST("registrasi")
+    fun registrasi(
+        //tambah User
+        @Field("nama_pengguna") nama_pengguna: String,
+        @Field("password") password: String,
+        @Field("no_hp") no_hp: String,
+        @Field("token") token: String,
+        //tambah orangtua
+        @Field("nik_ayah") nik_ayah: String,
+        @Field("nama_ayah") nama_ayah: String,
+        @Field("nik_ibu") nik_ibu: String,
+        @Field("nama_ibu") nama_ibu: String,
+        @Field("alamat") alamat: String,
+        @Field("rt") rt: String,
+        @Field("rw") rw: String,
+        @Field("kecamatan_id") kecamatan_id: Int,
+        @Field("desa_kelurahan_id") desa_kelurahan_id: Int,
+        @Field("posyandu_id") posyandu_id: Int,
+        //tambah anak
+        @Field("nik_anak") nik_anak: String,
+        @Field("nama_anak") nama_anak: String,
+        @Field("jenis_kelamin") jenis_kelamin: String,
+        @Field("tanggal_lahir") tanggal_lahir: String,
+        @Field("berat_lahir") berat_lahir: String,
+        @Field("panjang_lahir") panjang_lahir: String,
+    ): Call<ResponRegister>
+
+    @FormUrlEncoded
+    @POST("create_dataAnakBaru")
+    fun tambah_data_anak(
+        @Field("nik_anak") nik_anak: String,
+        @Field("orangtua_id") orangtua_id: String,
+        @Field("nama_anak") nama_anak: String,
+        @Field("jenis_kelamin") jenis_kelamin: String,
+        @Field("tanggal_lahir") tanggal_lahir: String,
+        @Field("berat_lahir") berat_lahir: String,
+        @Field("panjang_lahir") panjang_lahir: String,
+    ) : Call<ResponsePesan>
+
+    @FormUrlEncoded
+    @POST("create_datatimbang")
+    fun tambahdatatimbang(
+        @Field("nik_anak") nik_anak: String,
+        @Field("berat_badan") berat_badan: String,
+        @Field("tinggi_badan") tinggi_badan: String,
+        @Field("lingkar_kepala") lingkar_kepala: String,
+    ) : Call<ResponsePesan>
+
+    @FormUrlEncoded
+    @POST("kelola_persetujuan/{id}")
+    fun ubah_persetujuan(
+        @Path("id") id: String,
+        @Field("status_persetujuan") status_persetujuan: String,
+    ) : Call<ResponsePesan>
+
+    @GET("get_user_orangtua/{id}")
+    fun getuserortu(
+        @Path("id") id:Int,
+    ): Call<GetOrangtua>
+
+    @GET("list-status_persetujuan")
+    fun getstatuspersetujuan(
+    ): Call<ListPersetujuan>
+
+    @GET("list-tips")
+    fun getTips(
+    ): Call<ListTipsKes>
 }

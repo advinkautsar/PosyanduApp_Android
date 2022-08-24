@@ -10,10 +10,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.posyanduapp.R
 import com.example.posyanduapp.databinding.ItemLayoutAnakBinding
 import com.example.posyanduapp.model.ListAnak
-import com.example.posyanduapp.ui.bidan.DetailAnakBidan
-import com.example.posyanduapp.ui.bidan.RiwayatRujukanPerAnakBidan
-import com.example.posyanduapp.ui.bidan.GrafikPertumbuhanActivity
-import com.example.posyanduapp.ui.bidan.RiwayatPemKesActivity
+import com.example.posyanduapp.ui.bidan.*
+import com.example.posyanduapp.ui.kader.*
 import kotlin.collections.ArrayList
 
 class AdapterAnak (
@@ -80,7 +78,7 @@ class AdapterAnak (
                     true
                 }
                 R.id.menu_grafik->{
-                    val intent = Intent(itemView.context, GrafikPertumbuhanActivity::class.java)
+                    val intent = Intent(itemView.context, RiwayatStatusGiziAnakctivity::class.java)
                     intent.putExtra("nik", nik_anak)
                     intent.putExtra("nama", nama_anak)
                     itemView.getContext().startActivity(intent);
@@ -96,6 +94,55 @@ class AdapterAnak (
                 }
                 R.id.menu_rujukan->{
                     val intent = Intent(itemView.context, RiwayatRujukanPerAnakBidan::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
+                    itemView.getContext().startActivity(intent);
+                    true
+                }
+                R.id.grafik_bb_tb->{
+                    val intent = Intent(itemView.context, Grafik_BB_TB::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
+                    itemView.getContext().startActivity(intent);
+                    true
+                }
+                R.id.grafik_bb_pb->{
+                    val intent = Intent(itemView.context, Grafik_BB_PB::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
+                    itemView.getContext().startActivity(intent);
+                    true
+                }
+                R.id.grafik_bb_u->{
+                    val intent = Intent(itemView.context, Grafik_BB_U::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
+                    itemView.getContext().startActivity(intent);
+                    true
+                }
+                R.id.grafik_tb_u->{
+                    val intent = Intent(itemView.context, Grafik_TB_U::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
+                    itemView.getContext().startActivity(intent);
+                    true
+                }
+                R.id.grafik_pb_u->{
+                    val intent = Intent(itemView.context, Grafik_PB_U::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
+                    itemView.getContext().startActivity(intent);
+                    true
+                }
+                R.id.grafik_lk_u->{
+                    val intent = Intent(itemView.context, Grafik_LK_U::class.java)
+                    intent.putExtra("nik", nik_anak)
+                    intent.putExtra("nama", nama_anak)
+                    itemView.getContext().startActivity(intent);
+                    true
+                }
+                R.id.grafik_imt_u->{
+                    val intent = Intent(itemView.context, Grafik_IMT_U::class.java)
                     intent.putExtra("nik", nik_anak)
                     intent.putExtra("nama", nama_anak)
                     itemView.getContext().startActivity(intent);

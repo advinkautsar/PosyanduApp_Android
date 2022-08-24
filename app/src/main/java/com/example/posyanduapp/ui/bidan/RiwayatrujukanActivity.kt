@@ -22,9 +22,8 @@ class RiwayatrujukanActivity : AppCompatActivity() {
 
     lateinit var rvListrujukan: RecyclerView
     lateinit var adapter: AdapterRujukanAnak
-
-
     private lateinit var binding: ActivityRiwayatrujukanBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 

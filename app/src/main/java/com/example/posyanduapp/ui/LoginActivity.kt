@@ -45,7 +45,7 @@ class LoginActivity : AppCompatActivity() {
             login()
         }
         tv_daftar.setOnClickListener {
-            startActivity(Intent(this, PencarianActivity::class.java ))
+            startActivity(Intent(this, RegistrasiActivity::class.java ))
         }
         FirebaseMessaging.getInstance().token
             .addOnCompleteListener(OnCompleteListener { task ->

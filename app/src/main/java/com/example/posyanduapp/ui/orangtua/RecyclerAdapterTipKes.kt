@@ -23,7 +23,7 @@ class RecyclerAdapterTipKes(private val tiplist : ArrayList<Tipkes>) :
 
 
     inner class ViewHolder(itemView : View, listener: RecyclerAdapterTipKes.onItemClickListener) : RecyclerView.ViewHolder(itemView){
-        val imagetips : ShapeableImageView = itemView.findViewById(R.id.tipkes_gambar)
+
         val titletips : TextView = itemView.findViewById(R.id.tipkes_judul)
 
         init {
@@ -40,7 +40,6 @@ class RecyclerAdapterTipKes(private val tiplist : ArrayList<Tipkes>) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val currentItem = tiplist[position]
-        holder.imagetips.setImageResource(currentItem.gambar_tip)
         holder.titletips.text = currentItem.judul_tip
     }
 
